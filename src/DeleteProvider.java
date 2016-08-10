@@ -10,7 +10,7 @@ import java.sql.SQLException;
 /**
  * Created by USER on 22.07.2016.
  */
-@WebServlet(name = "DeleteProvider", urlPatterns = "/delete")
+@WebServlet(name = "DeleteProvider", urlPatterns = "/deleteprovider")
 public class DeleteProvider extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -19,7 +19,7 @@ public class DeleteProvider extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id_provider = Integer.parseInt(request.getParameter("id_provider"));
         try {
-            DAO_Provider.deleteProvider(id_provider);
+            DAOProvider.deleteProvider(id_provider);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         } catch (NamingException e) {

@@ -166,13 +166,13 @@
             <td><c:out value="${provider.date_of_delivery}"/></td>
             <td><c:out value="${provider.getName_provider()}"/></td>
             <td>
-                <a href="delete?id_provider=${provider.id_provider}" >
+                <a href="deleteprovider?id_provider=${provider.id_provider}" >
                     <img src="delete.png"/>
                 </a>
             </td>
         </tr>
     </c:forEach>
-    <form action="/add" method="POST">
+    <form action="/addprovider" method="POST">
         <tr>
             <td>    </td>
 

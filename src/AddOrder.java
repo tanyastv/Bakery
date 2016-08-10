@@ -9,7 +9,7 @@ import java.sql.SQLException;
 /**
  * Created by USER on 22.07.2016.
  */
-@WebServlet(name = "AddOrder", urlPatterns = "/add")
+@WebServlet(name = "AddOrder", urlPatterns = "/addorder")
 public class AddOrder extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name_order = request.getParameter("name_order");
@@ -19,7 +19,7 @@ public class AddOrder extends HttpServlet {
 
         try {
 
-            DAO_Order.addOrder(name_order,id_product,id_provider,nds);
+            DAOOrder.addOrder(name_order,id_product,id_provider,nds);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }

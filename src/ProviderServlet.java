@@ -17,7 +17,7 @@ public class ProviderServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
-            request.setAttribute("provider", DAO_Provider.getProvider());
+            request.setAttribute("provider", DAOProvider.getProvider());
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {

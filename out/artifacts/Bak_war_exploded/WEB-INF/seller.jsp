@@ -165,13 +165,13 @@
 
             <td><c:out value="${seller.id_order}"/></td>
             <td>
-                <a href="delete?id_seller=${seller.id_seller}" >
+                <a href="deleteseller?id_seller=${seller.id_seller}" >
                     <img src="delete.png"/>
                 </a>
             </td>
         </tr>
     </c:forEach>
-    <form action="/add" method="POST">
+    <form action="/addseller" method="POST">
         <tr>
             <td>    </td>
             <td >

@@ -11,7 +11,7 @@ import static org.apache.taglibs.standard.Version.getProduct;
 /**
  * Created by USER on 18.07.2016.
  */
-public class DAO_Product {
+public class DAOProduct {
     public static Connection getConnection() throws ClassNotFoundException, SQLException, NamingException {
         String url = "jdbc:mysql://localhost:3306/bakery";
         DriverManager.registerDriver(new com.mysql.jdbc.Driver());

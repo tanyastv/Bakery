@@ -166,13 +166,13 @@
             <td><c:out value="${sale.id_product}"/></td>
             <td><c:out value="${sale.cost_sale}"/></td>
             <td>
-                <a href="delete?id_sale=${sale.id_sale}" >
+                <a href="deletesale?id_sale=${sale.id_sale}" >
                     <img src="delete.png"/>
                 </a>
             </td>
         </tr>
     </c:forEach>
-    <form action="/add" method="POST">
+    <form action="/addsale" method="POST">
         <tr>
             <td>    </td>
             <td >

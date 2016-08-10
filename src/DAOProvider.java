@@ -7,7 +7,7 @@ import java.util.List;
 
 //import static org.apache.taglibs.standard.Version.getProvider;
 
-public class DAO_Provider {
+public class DAOProvider {
     public static Connection getConnection() throws ClassNotFoundException, SQLException, NamingException {
         String url = "jdbc:mysql://localhost:3306/bakery";
         DriverManager.registerDriver(new com.mysql.jdbc.Driver());

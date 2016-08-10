@@ -9,14 +9,14 @@ import java.sql.SQLException;
 /**
  * Created by USER on 18.07.2016.
  */
-@WebServlet(name = "AddProduct", urlPatterns = "/add")
+@WebServlet(name = "AddProduct", urlPatterns = "/addproduct")
 public class AddProduct extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name_product = request.getParameter("name_product");
         String cost = request.getParameter("cost");
 
         try {
-            DAO_Product.addProduct(name_product,cost);
+            DAOProduct.addProduct(name_product,cost);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }

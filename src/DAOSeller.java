@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by USER on 22.07.2016.
  */
-public class DAO_Seller {
+public class DAOSeller {
     public static Connection getConnection() throws ClassNotFoundException, SQLException, NamingException {
         String url = "jdbc:mysql://localhost:3306/bakery";
         DriverManager.registerDriver(new com.mysql.jdbc.Driver());

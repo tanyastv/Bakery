@@ -17,7 +17,7 @@ public class SellerServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
-            request.setAttribute("seller", DAO_Seller.getSeller());
+            request.setAttribute("seller", DAOSeller.getSeller());
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {

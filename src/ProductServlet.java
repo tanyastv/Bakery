@@ -9,15 +9,15 @@ import java.sql.SQLException;
 /**
  * Created by USER on 18.07.2016.
  */
-@WebServlet(name = "MyServlet", urlPatterns = "/product")
-public class MyServlet extends HttpServlet {
+@WebServlet(name = "ProductServlet", urlPatterns = "/product")
+public class ProductServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
-            request.setAttribute("product", DAO_Product.getProduct());
+            request.setAttribute("product", DAOProduct.getProduct());
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
