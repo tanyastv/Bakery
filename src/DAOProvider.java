@@ -2,8 +2,8 @@ import javax.activation.DataSource;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.sql.Date;
+import java.util.*;
 
 //import static org.apache.taglibs.standard.Version.getProvider;
 
@@ -18,7 +18,7 @@ public class DAOProvider {
 
     public static List<Provider> getProvider() throws SQLException, ClassNotFoundException {
         try {Connection c = getConnection();
-            PreparedStatement ps = c.prepareStatement("SELECT id_provider,id_product,date_of_delivery name_provider from provider");
+            PreparedStatement ps = c.prepareStatement("SELECT * from provider");
             ResultSet resultSet = ps.executeQuery();
 
             ArrayList<Provider> provider = new ArrayList<>();

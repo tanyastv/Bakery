@@ -139,57 +139,47 @@
 </head>
 <body>
 
-<div style="background-color:#595959; color:#11d6e9; width:100%; height:50px; margin-top: 0px; margin-bottom: 10px;">
+<div style="background-color:#595959; color:#D3D3D3; width:100%; height:50px; margin-top: 0px; margin-bottom: 10px;">
   <h1 align="center">Accounting work bakery shop</h1>
 
 </div>
 <DIV ALIGN="CENTER">
   <img src="brandsfpXZPD_img.jpg" width="600" height="300" alt="brandsfpXZPD_img" ALIGN="CENTER"/>
-</DIV>
-<h1 align="center">Select the appropriate table</h1>
-<table align="center" class="simple-little-table" cellspacing='0' width="500">
+  <h1 align="center">Select the table</h1>
 
-  <form>
-    <td>
-
+  <table align="center" >
+    <td align="center">
       <tr >
-        <form method="LINK" action="WEB-INF/product.jsp">
-          <input type="submit" value="PRODUCTS">
-        </form>
-      </tr>
-      <tr >
-        <form method="LINK" action="WEB-INF/provider.jsp">
-          <input type="submit" value="PROVIDER">
-        </form>
-      </tr>
-      <tr >
-        <form method="LINK" action="WEB-INF/order.jsp">
-          <input type="submit" value="ORDER">
-        </form>
-      </tr>
-      <tr >
-        <form method="LINK" action="WEB-INF/seller.jsp">
-          <input type="submit" value="SELLER">
-        </form>
-      </tr>
-      <tr >
-        <form method="LINK" action="WEB-INF/sale.jsp">
-          <input type="submit" value="SALE">
-        </form>
+        <a href="/product" > Products    </a>
       </tr>
 
+      <tr >
+        <a href="/provider" > Provider    </a>
+      </tr>
+
+      <tr >
+        <a href="/order"> Order    </a>
+      </tr>
+
+      <tr >
+        <a href="/sale"> Sale    </a>
+      </tr>
+
+      <tr >
+        <a href="/seller"> Seller </a>
+      </tr>
     </td>
-  </form>
-</table>
+  </table>
+</DIV>
+
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
-<!--<p><a href="http://www.yandex.ru">Поисковая система Яндекс</a></p>
-<!--<a href="ViewServ?command=view"><h1>Отобразить таблицу</h1></a>-->
-<div style="background-color:#595959; color:#FFFFFF; width:100%; height:30px; margin-top: 30px; margin-down: 0px;">
+
+<div style="background-color:#595959; color:#D3D3D3; width:100%; height:30px; margin-top: 30px; margin-down: 0px;">
   <h4 align="center" >autor - t_sarnavskaya@mail.ru</h4>
 </div>
 

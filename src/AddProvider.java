@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Date;
 import java.sql.SQLException;
 
 /**
@@ -17,7 +18,7 @@ public class AddProvider extends HttpServlet {
         String name_provider = request.getParameter("name_provider");
 
         try {
-            DAOProvider.addProvider(id_product,date_of_delivery,name_provider);
+            DAOProvider.addProvider(id_product, date_of_delivery, name_provider);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }

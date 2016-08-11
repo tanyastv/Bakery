@@ -19,7 +19,7 @@ public class DAOSeller {
 
     public static List<Seller> getSeller() throws SQLException, ClassNotFoundException {
         try {Connection c = getConnection();
-            PreparedStatement ps = c.prepareStatement("SELECT id_seller,name_seller,id_order from seller");
+            PreparedStatement ps = c.prepareStatement("SELECT * from seller");
             ResultSet resultSet = ps.executeQuery();
 
             ArrayList<Seller> seller = new ArrayList<>();

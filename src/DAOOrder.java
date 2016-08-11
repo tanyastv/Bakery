@@ -27,7 +27,7 @@ public class DAOOrder {
 
     public static List<Order> getOrder() throws SQLException, ClassNotFoundException {
         try {Connection c = getConnection();
-            PreparedStatement ps = c.prepareStatement("SELECT id_order,name_order,id_product,id_provider,nds from bakery.order");
+            PreparedStatement ps = c.prepareStatement("SELECT * from bakery.order");
             ResultSet resultSet = ps.executeQuery();
 
             ArrayList<Order> order = new ArrayList<>();

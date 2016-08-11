@@ -139,7 +139,7 @@
 </head>
 <body>
 
-<div style="background-color:#595959; color:#11d6e9; width:100%; height:50px; margin-top: 0px; margin-bottom: 10px;">
+<div style="background-color:#595959; color:#D3D3D3; width:100%; height:50px; margin-top: 0px; margin-bottom: 10px;">
     <h1 align="center">SELLER</h1>
 
 </div>
@@ -194,7 +194,7 @@
 <br>
 <br>
 
-<div style="background-color:#595959; color:#FFFFFF; width:100%; height:30px; margin-top: 30px; margin-down: 0px;">
+<div style="background-color:#595959; color:#D3D3D3; width:100%; height:30px; margin-top: 30px; margin-down: 0px;">
     <h4 align="center" >autor - t_sarnavskaya@mail.ru</h4>
 </div>
 

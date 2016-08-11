@@ -139,12 +139,12 @@
 </head>
 <body>
 
-<div style="background-color:#595959; color:#11d6e9; width:100%; height:50px; margin-top: 0px; margin-bottom: 10px;">
+<div style="background-color:#595959; color:#D3D3D3; width:100%; height:50px; margin-top: 0px; margin-bottom: 10px;">
     <h1 align="center">ORDER</h1>
 
 </div>
 <DIV ALIGN="CENTER">
-    <img src="brandsfpXZPD_img.jpg" width="600" height="300" alt="brandsfpXZPD_img" ALIGN="CENTER"/>
+    <img src="smeta.png" width="600" height="300" alt="smeta" ALIGN="CENTER"/>
 </DIV>
 
 <table align="center" class="simple-little-table" cellspacing='0' width="500">
@@ -203,7 +203,7 @@
 <br>
 <br>
 
-<div style="background-color:#595959; color:#FFFFFF; width:100%; height:30px; margin-top: 30px; margin-down: 0px;">
+<div style="background-color:#595959; color:#D3D3D3; width:100%; height:30px; margin-top: 30px; margin-down: 0px;">
     <h4 align="center" >autor - t_sarnavskaya@mail.ru</h4>
 </div>
 

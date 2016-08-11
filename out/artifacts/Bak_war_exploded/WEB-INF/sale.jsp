@@ -122,6 +122,17 @@
         border-color:#333;
     }
 
+    input[type=date] {
+        padding:5px;
+        border:2px solid #ccc;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    input[type=date]:focus {
+        border-color:#333;
+    }
+
     input[type=submit] {
         padding:5px 15px;
         background:#ccc;
@@ -139,7 +150,7 @@
 </head>
 <body>
 
-<div style="background-color:#595959; color:#11d6e9; width:100%; height:50px; margin-top: 0px; margin-bottom: 10px;">
+<div style="background-color:#595959; color:#D3D3D3; width:100%; height:50px; margin-top: 0px; margin-bottom: 10px;">
     <h1 align="center">SALE</h1>
 
 </div>
@@ -162,9 +173,10 @@
 
         <tr>
             <td>${sale.id_sale}</td>
-            <td><c:out value="${sale.id_saller}"/></td>
+            <td><c:out value="${sale.id_seller}"/></td>
             <td><c:out value="${sale.id_product}"/></td>
             <td><c:out value="${sale.cost_sale}"/></td>
+            <td><c:out value="${sale.date_of_sale}"/></td>
             <td>
                 <a href="deletesale?id_sale=${sale.id_sale}" >
                     <img src="delete.png"/>
@@ -201,7 +213,7 @@
 <br>
 <br>
 
-<div style="background-color:#595959; color:#FFFFFF; width:100%; height:30px; margin-top: 30px; margin-down: 0px;">
+<div style="background-color:#595959; color:#D3D3D3; width:100%; height:30px; margin-top: 30px; margin-down: 0px;">
     <h4 align="center" >autor - t_sarnavskaya@mail.ru</h4>
 </div>
 
