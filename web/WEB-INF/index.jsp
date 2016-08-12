@@ -144,7 +144,7 @@
 
 </div>
 <DIV ALIGN="CENTER">
-  <img src="brandsfpXZPD_img.jpg" width="600" height="300" alt="brandsfpXZPD_img" ALIGN="CENTER"/>
+  <img src="brand.jpg" width="600" height="300" alt="brand" ALIGN="CENTER"/>
   <h1 align="center">Select the table</h1>
 
   <table align="center" >

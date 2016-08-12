@@ -155,7 +155,7 @@
 
 </div>
 <DIV ALIGN="CENTER">
-    <img src="brandsfpXZPD_img.jpg" width="600" height="300" alt="brandsfpXZPD_img" ALIGN="CENTER"/>
+    <img src="brand.jpg" width="600" height="300" alt="brand" ALIGN="CENTER"/>
 </DIV>
 
 <table align="center" class="simple-little-table" cellspacing='0' width="500">

@@ -28,7 +28,7 @@ public class DAOProvider {
                 Date date_of_delivery = resultSet.getDate(3);
                 String name_product = resultSet.getString(4);
 
-                provider.add(new Provider(id_provider,id_product,date_of_delivery, name_product));
+                provider.add(new Provider(id_provider,id_product,date_of_delivery,name_product));
                 System.out.println(provider.size());
             }
             return provider;
@@ -55,14 +55,14 @@ public class DAOProvider {
         //return null;
 
     }
-    public static void addProvider(String id_product, String date_of_delivery, String name_provider) throws SQLException, ClassNotFoundException {
+    public static void addProvider(/*String id_product, String date_of_delivery, */String name_provider) throws SQLException, ClassNotFoundException {
         try {
             Connection c = getConnection();
-            PreparedStatement ps = c.prepareStatement("INSERT INTO provider (id_product, date_of_delivery,name_provider) VALUES (?,?,?)");
+            PreparedStatement ps = c.prepareStatement("INSERT INTO provider (/*id_product, date_of_delivery,*/name_provider) VALUES (?,?,?)");
             {
-                ps.setInt(1, Integer.parseInt(String.valueOf(id_product)));
-                ps.setDate(2, Date.valueOf(date_of_delivery));
-                ps.setString(3, name_provider);
+                //ps.setInt(1, Integer.parseInt(String.valueOf(id_product)));
+                //ps.setDate(2, Date.valueOf(date_of_delivery));
+                ps.setString(1, name_provider);
                 ps.executeUpdate();
             }
         }
