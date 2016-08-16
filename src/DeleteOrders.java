@@ -1,3 +1,4 @@
+import javax.naming.NamingException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -9,20 +10,26 @@ import java.sql.SQLException;
 /**
  * Created by USER on 22.07.2016.
  */
-@WebServlet(name = "OrderServlet", urlPatterns = "/order")
-public class OrderServlet extends HttpServlet {
+@WebServlet(name = "DeleteOrders", urlPatterns = "/deleteorders")
+public class DeleteOrders extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
+        int id_order = Integer.parseInt(request.getParameter("id_order"));
         try {
-            request.setAttribute("order", DAOOrder.getOrder());
-        } catch (SQLException e) {
+            DAOOrders.deleteOrders(id_order);
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } catch (NamingException e) {
             e.printStackTrace();
         }
-        request.getRequestDispatcher("WEB-INF/order.jsp").forward(request,response);
+        response.sendRedirect("/orders");
+
     }
+
 }

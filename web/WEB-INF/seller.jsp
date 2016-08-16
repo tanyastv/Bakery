@@ -130,7 +130,33 @@
         -webkit-border-radius: 5px;
         border-radius: 5px;
     }
-
+    a.button15 {
+        display: inline-block;
+        font-family: arial,sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(68,68,68);
+        text-decoration: none;
+        user-select: none;
+        padding: .2em 1.2em;
+        outline: none;
+        border: 1px solid rgba(0,0,0,.1);
+        border-radius: 2px;
+        background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+        transition: all .218s ease 0s;
+    }
+    a.button15:hover {
+        color: rgb(24,24,24);
+        border: 1px solid rgb(198,198,198);
+        background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+        box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    }
+    a.button15:active {
+        color: rgb(51,51,51);
+        border: 1px solid rgb(204,204,204);
+        background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+        box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+    }
 </style>
 
 <html>
@@ -139,12 +165,15 @@
 </head>
 <body>
 
-<div style="background-color:#595959; color:#D3D3D3; width:100%; height:50px; margin-top: 0px; margin-bottom: 10px;">
-    <h1 align="center">SELLER</h1>
-
+<div style="background-color:#000000; color:#D3D3D3; width:100%; height:50px; margin-top: 0px; margin-bottom: 10px;">
+    <h1 align="center"> ${user.getName_user()} </h1>
+    <div align="right">
+        <a href="/"  class="button15">Home</a>
+        <a href="/vihod"  class="button15">Exit</a>
+    </div>
 </div>
 <DIV ALIGN="CENTER">
-    <img src="brand.jpg" width="600" height="300" alt="brand" ALIGN="CENTER"/>
+    <img src="a.png" width="600" height="300" alt="seller" ALIGN="CENTER" />
 </DIV>
 
 <table align="center" class="simple-little-table" cellspacing='0' width="500">
@@ -166,7 +195,7 @@
             <td><c:out value="${seller.id_order}"/></td>
             <td>
                 <a href="deleteseller?id_seller=${seller.id_seller}" >
-                    <img src="delete.png"/>
+                    <img src="3.png" />
                 </a>
             </td>
         </tr>
@@ -194,7 +223,7 @@
 <br>
 <br>
 
-<div style="background-color:#595959; color:#D3D3D3; width:100%; height:30px; margin-top: 30px; margin-down: 0px;">
+<div style="background-color:#000000; color:#D3D3D3; width:100%; height:30px; margin-top: 30px; margin-down: 0px;">
     <h4 align="center" >autor - t_sarnavskaya@mail.ru</h4>
 </div>
 

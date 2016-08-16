@@ -13,10 +13,13 @@ import java.sql.SQLException;
 @WebServlet(name = "DeleteProvider", urlPatterns = "/deleteprovider")
 public class DeleteProvider extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
         int id_provider = Integer.parseInt(request.getParameter("id_provider"));
         try {
             DAOProvider.deleteProvider(id_provider);

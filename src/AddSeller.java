@@ -12,6 +12,8 @@ import java.sql.SQLException;
 @WebServlet(name = "AddSeller", urlPatterns = "/addseller")
 public class AddSeller extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
         String name_seller = request.getParameter("name_seller");
         String id_order = request.getParameter("id_order");
 
@@ -25,6 +27,7 @@ public class AddSeller extends HttpServlet {
 
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
     }
 }

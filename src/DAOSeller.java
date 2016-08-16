@@ -28,7 +28,7 @@ public class DAOSeller {
                 String name_seller = resultSet.getString(2);
                 int id_order = resultSet.getInt(3);
                 seller.add(new Seller(id_seller, name_seller,id_order));
-                System.out.println(seller.size());
+              //  System.out.println(seller.size());
             }
             return seller;
         }

@@ -29,7 +29,7 @@ public class DAOProvider {
                 String name_product = resultSet.getString(4);
 
                 provider.add(new Provider(id_provider,id_product,date_of_delivery,name_product));
-                System.out.println(provider.size());
+               // System.out.println(provider.size());
             }
             return provider;
         }

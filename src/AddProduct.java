@@ -12,6 +12,8 @@ import java.sql.SQLException;
 @WebServlet(name = "AddProduct", urlPatterns = "/addproduct")
 public class AddProduct extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
         String name_product = request.getParameter("name_product");
         String cost = request.getParameter("cost");
 
@@ -24,6 +26,7 @@ public class AddProduct extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
     }
 }

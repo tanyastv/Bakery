@@ -1,16 +1,16 @@
 /**
  * Created by USER on 22.07.2016.
  */
-public class Order {
+public class Orders {
     int id_order;
     String name_order;
     int id_product;
     int id_provider;
     int nds;
 
-    public Order(int size, String name_order){}
+    public Orders(int size, String name_order){}
 
-    public Order(int id_order, String name_order, int id_product, int id_provider, int nds) {
+    public Orders(int id_order, String name_order, int id_product, int id_provider, int nds) {
         this.id_order = id_order;
         this.name_order = name_order;
         this.id_product = id_product;
@@ -61,7 +61,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
+        return "Orders{" +
                 "id_order=" + id_order +
                 ", name_order=" + name_order +
                 ", id_product=" + id_product +

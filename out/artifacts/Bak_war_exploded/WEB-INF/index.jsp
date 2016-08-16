@@ -131,6 +131,33 @@
     border-radius: 5px;
   }
 
+  a.button15 {
+    display: inline-block;
+    font-family: arial,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(68,68,68);
+    text-decoration: none;
+    user-select: none;
+    padding: .2em 1.2em;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 2px;
+    background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+    transition: all .218s ease 0s;
+  }
+  a.button15:hover {
+    color: rgb(24,24,24);
+    border: 1px solid rgb(198,198,198);
+    background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  }
+  a.button15:active {
+    color: rgb(51,51,51);
+    border: 1px solid rgb(204,204,204);
+    background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+    box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+  }
 </style>
 
 <html>
@@ -139,39 +166,32 @@
 </head>
 <body>
 
-<div style="background-color:#595959; color:#D3D3D3; width:100%; height:50px; margin-top: 0px; margin-bottom: 10px;">
-  <h1 align="center">Accounting work bakery shop</h1>
-
+<div style="background-color:#000000; color:#D3D3D3; width:100%; height:50px; margin-top: 0px; margin-bottom: 10px;">
+    <h1 align="center"> ${user.getName_user()} </h1>
+  <div align="right">
+    <a href="/registr/"  class="button15" align="right">Registration</a>
+    <a href="/login/"  class="button15" align="right">Sign in</a>
+  </div>
 </div>
-<DIV ALIGN="CENTER">
-  <img src="brandsfpXZPD_img.jpg" width="600" height="300" alt="brandsfpXZPD_img" ALIGN="CENTER"/>
-  <h1 align="center">Select the table</h1>
 
-  <table align="center" >
+<div ALIGN="CENTER">
+ <img src="b.png" width="600" height="300" alt="index" ALIGN="CENTER" />
+  <h1 align="center">Bakery Shop</h1>
+
+  <table align="center"  cellspacing='0' width="500">
     <td align="center">
-      <tr >
-        <a href="/product" > Products    </a>
-      </tr>
+      <tr>  <a href="/product" class="button15"> Products  </a> </tr>
 
-      <tr >
-        <a href="/provider" > Provider    </a>
-      </tr>
+      <tr>  <a href="/provider" class="button15"> Provider </a></tr>
 
-      <tr >
-        <a href="/order"> Order    </a>
-      </tr>
+      <tr>  <a href="/order" class="button15"> Order  </a></tr>
 
-      <tr >
-        <a href="/sale"> Sale    </a>
-      </tr>
+      <tr>  <a href="/sale" class="button15"> Sale  </a></tr>
 
-      <tr >
-        <a href="/seller"> Seller </a>
-      </tr>
+      <tr>  <a href="/seller" class="button15"> Seller </a></tr>
+
     </td>
-  </table>
-</DIV>
-
+</table>
 <br>
 <br>
 <br>
@@ -179,7 +199,7 @@
 <br>
 <br>
 
-<div style="background-color:#595959; color:#D3D3D3; width:100%; height:30px; margin-top: 30px; margin-down: 0px;">
+<div style="background-color:#000000; color:#D3D3D3; width:100%; height:30px; margin-top: 30px; margin-down: 0px;">
   <h4 align="center" >autor - t_sarnavskaya@mail.ru</h4>
 </div>
 

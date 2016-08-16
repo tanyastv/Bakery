@@ -32,7 +32,7 @@ public class DAOSale {
                 int cost_sale = resultSet.getInt(4);
                 java.sql.Date date_of_sale = resultSet.getDate(5);
                 sale.add(new Sale(id_sale, id_seller, id_product, cost_sale, date_of_sale));
-                System.out.println(sale.size());
+               // System.out.println(sale.size());
             }
             return sale;
         }

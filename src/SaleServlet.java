@@ -12,10 +12,13 @@ import java.sql.SQLException;
 @WebServlet(name = "SaleServlet", urlPatterns = "/sale")
 public class SaleServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
         try {
             request.setAttribute("sale", DAOSale.getSale());
         } catch (SQLException e) {

@@ -12,11 +12,13 @@ import java.sql.SQLException;
 @WebServlet(name = "StartServlet", urlPatterns = "/")
 public class StartServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
         request.getRequestDispatcher("WEB-INF/index.jsp").forward(request,response);
     }
 }

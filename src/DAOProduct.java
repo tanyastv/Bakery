@@ -37,7 +37,7 @@ public class DAOProduct {
                 String name_product = resultSet.getString(2);
                 int cost = resultSet.getInt(3);
                 product.add(new Product(id_product, name_product,cost));
-                System.out.println(product.size());
+                //System.out.println(product.size());
             }
             return product;
         }

@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <style>
@@ -184,24 +185,22 @@
 </style>
 <html>
 <head>
-    <title>Authorization</title>
+    <title class="clearfix">Registration</title>
+   <div align="center"><h2>Registration</h2></div>
+    <div style="color:#FF0000" align="center"><h2>${error}</h2></div>
+    <form method="post" class="form-3">
 
-    <form class="form-3">
-        <p class="clearfix">
+        <div class="clearfix">
             <label for="login">Login</label>
             <input type="text" name="login" id="login" placeholder="Login">
-        </p>
-        <p class="clearfix">
+        </div>
+        <div class="clearfix">
             <label for="password">Password</label>
             <input type="password" name="password" id="password" placeholder="Password">
-        </p>
-        <p class="clearfix">
-            <input type="checkbox" name="remember" id="Remember">
-            <label for="remember">Remember</label>
-        </p>
-        <p class="clearfix">
+        </div>
+        <div class="clearfix">
             <input type="submit" name="submit" value="Sign in">
-        </p>
+        </div>
     </form>
 </head>
 <body>

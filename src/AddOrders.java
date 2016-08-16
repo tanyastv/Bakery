@@ -9,9 +9,11 @@ import java.sql.SQLException;
 /**
  * Created by USER on 22.07.2016.
  */
-@WebServlet(name = "AddOrder", urlPatterns = "/addorder")
-public class AddOrder extends HttpServlet {
+@WebServlet(name = "AddOrders", urlPatterns = "/addorders")
+public class AddOrders extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
         String name_order = request.getParameter("name_order");
         String id_product = request.getParameter("id_product");
         String id_provider = request.getParameter("id_provider");
@@ -19,14 +21,15 @@ public class AddOrder extends HttpServlet {
 
         try {
 
-            DAOOrder.addOrder(name_order,id_product,id_provider,nds);
+            DAOOrders.addOrders(name_order,id_product,id_provider,nds);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
-        response.sendRedirect("/order");
+        response.sendRedirect("/orders");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
     }
 }
