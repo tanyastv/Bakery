@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
-  User: USER
+  entity.User: USER
   Date: 18.07.2016
   Time: 20:39
   To change this template use File | Settings | File Templates.
@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <style>
 
-    imple-little-table {
+    .imple-little-table {
         font-family:Arial, Helvetica, sans-serif;
         color:#666;
         font-size:12px;

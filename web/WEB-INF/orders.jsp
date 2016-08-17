@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
-  User: USER
+  entity.User: USER
   Date: 18.07.2016
   Time: 20:39
   To change this template use File | Settings | File Templates.
@@ -187,7 +187,7 @@
         <th width="168"><b>Delete</b></th>
     </tr>
 
-    <c:forEach items="${requestScope.order}" var="orders">
+    <c:forEach items="${requestScope.orders}" var="orders">
 
         <tr>
 
@@ -198,7 +198,7 @@
             <td><c:out value="${orders.nds}"/></td>
             <td>
                 <a href="deleteorders?id_order=${orders.id_order}" >
-                    <img src="3.png" />
+                    <img src="../image/3.png" />
                 </a>
             </td>
         </tr>

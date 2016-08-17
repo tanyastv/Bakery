@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
-  User: USER
+  entity.User: USER
   Date: 18.07.2016
   Time: 20:39
   To change this template use File | Settings | File Templates.
@@ -177,14 +177,16 @@
 <div ALIGN="CENTER">
  <img src="b.png" width="600" height="300" alt="index" ALIGN="CENTER" />
   <h1 align="center">Bakery Shop</h1>
-
+    <img src="44.png" alt="blue line" ALIGN="CENTER" />
+      <br>
   <table align="center"  cellspacing='0' width="500">
+      <br>
     <td align="center">
       <tr>  <a href="/product" class="button15"> Products  </a> </tr>
 
       <tr>  <a href="/provider" class="button15"> Provider </a></tr>
 
-      <tr>  <a href="/order" class="button15"> Order  </a></tr>
+      <tr>  <a href="/orders" class="button15"> Order  </a></tr>
 
       <tr>  <a href="/sale" class="button15"> Sale  </a></tr>
 
