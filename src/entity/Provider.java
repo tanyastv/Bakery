@@ -8,12 +8,13 @@ import java.util.Date;
 public class Provider {
     int id_provider;
     int id_product;
-    Date  date_of_delivery;
+    Date date_of_delivery;
     String name_provider;
 
-    public Provider(int size, String name_provider){}
+    public Provider(int size, String name_provider) {
+    }
 
-    public Provider(int id_provider, int id_product,  Date  date_of_delivery, String name_provider) {
+    public Provider(int id_provider, int id_product, Date date_of_delivery, String name_provider) {
         this.id_provider = id_provider;
         this.id_product = id_product;
         this.date_of_delivery = date_of_delivery;

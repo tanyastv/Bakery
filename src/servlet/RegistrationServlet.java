@@ -40,7 +40,7 @@ public class RegistrationServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         session = request.getSession();
-        request.getRequestDispatcher("../WEB-INF/registr.jsp").forward(request, response);
+        request.getRequestDispatcher("../registr.jsp").forward(request, response);
         session.removeAttribute("error");
     }
 }

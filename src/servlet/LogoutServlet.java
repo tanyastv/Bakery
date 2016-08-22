@@ -11,7 +11,7 @@ import java.io.IOException;
 /**
  * Created by USER on 16.08.2016.
  */
-@WebServlet(name = "servlet.LogoutServlet", urlPatterns = "/vihod")
+@WebServlet(name = "servlet.LogoutServlet", urlPatterns = "/exit")
 public class LogoutServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

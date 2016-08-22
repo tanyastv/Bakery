@@ -30,6 +30,6 @@ public class ProductServlet extends HttpServlet {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        request.getRequestDispatcher("WEB-INF/product.jsp").forward(request,response);
+        request.getRequestDispatcher("product.jsp").forward(request, response);
     }
 }

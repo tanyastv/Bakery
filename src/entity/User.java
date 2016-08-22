@@ -15,15 +15,18 @@ public class User {
     String passwordd;
     int is_admin;
 
-    public int     getId_user() {
+    public int getId_user() {
         return id_user;
     }
-    public String  getName_user() {
+
+    public String getName_user() {
         return name_user;
     }
-    public String  getPasswordd() {
+
+    public String getPasswordd() {
         return passwordd;
     }
+
     public boolean is_admin() {
         return (is_admin == 1);
     }
@@ -33,6 +36,7 @@ public class User {
         this.passwordd = passwordd;
         this.is_admin = is_admin;
     }
+
     public static Connection getConnection() throws ClassNotFoundException, SQLException, NamingException {
         String url = "jdbc:mysql://localhost:3306/bakery";
         DriverManager.registerDriver(new com.mysql.jdbc.Driver());
@@ -40,6 +44,7 @@ public class User {
         return connection;
 
     }
+
     public User(int id_user, String name_user, String passwordd, int is_admin) throws NoSuchAlgorithmException {
         this(name_user, passwordd, is_admin);
         this.id_user = id_user;
@@ -51,17 +56,16 @@ public class User {
             Connection c = getConnection();
             PreparedStatement ps = c.prepareStatement("INSERT INTO users (name_user, passwordd, is_admin) VALUES (?, ?, 0)");
 
-                ps.setString(1, name_user);
-                ps.setString(2, passwordd);
-                ps.executeUpdate();
+            ps.setString(1, name_user);
+            ps.setString(2, passwordd);
+            ps.executeUpdate();
 
-        }
-        catch(NamingException e){
-           throw e;
+        } catch (NamingException e) {
+            throw e;
         }
 
     }
-    
+
     public static User get(String name_user) throws SQLException, NamingException, NoSuchAlgorithmException, ClassNotFoundException {
         User user = null;
 
@@ -82,11 +86,8 @@ public class User {
         } catch (Exception e) {
             throw e;
         }
-            return user;
-        }
-
-
-
+        return user;
+    }
 
 
     public static User get(int id_user) throws SQLException, NamingException, NoSuchAlgorithmException {
@@ -112,6 +113,7 @@ public class User {
         }
 
     }
+
     public static boolean valid(User user, String passwordd) throws Exception {
         try {
             return (user.getPasswordd().equals(passwordd));
@@ -119,6 +121,7 @@ public class User {
             throw e;
         }
     }
+
 
 
 }

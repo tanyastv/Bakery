@@ -23,7 +23,8 @@ public class DAOOrders {
     }
 
     public static List<Order> getOrders() throws SQLException, ClassNotFoundException {
-        try {Connection c = getConnection();
+        try {
+            Connection c = getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM orders");
             ResultSet resultSet = ps.executeQuery();
 
@@ -35,11 +36,9 @@ public class DAOOrders {
                 int id_provider = resultSet.getInt(4);
                 int nds = resultSet.getInt(5);
                 orders.add(new Order(id_order, name_order, id_product, id_provider, nds));
-               // System.out.println(orders.size());
             }
             return orders;
-        }
-        catch (NamingException e) {
+        } catch (NamingException e) {
             e.printStackTrace();
         }
         return null;
@@ -53,12 +52,13 @@ public class DAOOrders {
             {
                 ps.setInt(1, id_order);
                 ps.executeUpdate();
-            } System.out.println("PreparedStatement: " + ps);
-        }
-            catch(NamingException e){
+            }
+            System.out.println("PreparedStatement: " + ps);
+        } catch (NamingException e) {
             e.printStackTrace();
-        } }
-        //return null;
+        }
+    }
+    //return null;
 
     public static void addOrders(String name_order, String id_product, String id_provider, String nds) throws SQLException, ClassNotFoundException {
         try {
@@ -71,8 +71,7 @@ public class DAOOrders {
                 ps.setInt(4, Integer.parseInt(nds));
                 ps.executeUpdate();
             }
-        }
-        catch(NamingException e){
+        } catch (NamingException e) {
             e.printStackTrace();
         }
 

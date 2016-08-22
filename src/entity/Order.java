@@ -10,7 +10,8 @@ public class Order {
     int id_provider;
     int nds;
 
-    public Order(int size, String name_order){}
+    public Order(int size, String name_order) {
+    }
 
     public Order(int id_order, String name_order, int id_product, int id_provider, int nds) {
         this.id_order = id_order;

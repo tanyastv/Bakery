@@ -25,6 +25,7 @@ public class DeleteSaleServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         int id_sale = Integer.parseInt(request.getParameter("id_sale"));
+
         try {
             DAOSale.deleteSale(id_sale);
         } catch (SQLException | ClassNotFoundException e) {

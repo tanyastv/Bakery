@@ -25,8 +25,7 @@ public class AddOrdersServlet extends HttpServlet {
 
         try {
 
-            DAOOrders.addOrders(name_order,id_product,id_provider,nds);
-            System.out.println("name_order: " + name_order);
+            DAOOrders.addOrders(name_order, id_product, id_provider, nds);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }

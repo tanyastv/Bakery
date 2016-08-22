@@ -27,21 +27,20 @@ public class DAOProduct {
     }
 
     public static List<Product> getProduct() throws SQLException, ClassNotFoundException {
-        try {Connection c = getConnection();
-        PreparedStatement ps = c.prepareStatement("SELECT id_product,name_product,cost from product");
-        ResultSet resultSet = ps.executeQuery();
+        try {
+            Connection c = getConnection();
+            PreparedStatement ps = c.prepareStatement("SELECT id_product,name_product,cost from product");
+            ResultSet resultSet = ps.executeQuery();
 
             ArrayList<Product> product = new ArrayList<>();
             while (resultSet.next()) {
                 int id_product = resultSet.getInt(1);
                 String name_product = resultSet.getString(2);
                 int cost = resultSet.getInt(3);
-                product.add(new Product(id_product, name_product,cost));
-                //System.out.println(product.size());
+                product.add(new Product(id_product, name_product, cost));
             }
             return product;
-        }
-        catch (NamingException e) {
+        } catch (NamingException e) {
             e.printStackTrace();
         }
         return null;
@@ -55,13 +54,13 @@ public class DAOProduct {
                 ps.setInt(1, id_product);
                 ps.executeUpdate();
             }
+        } catch (NamingException e) {
+            e.printStackTrace();
         }
-             catch(NamingException e){
-                e.printStackTrace();
-            }
-            //return null;
+        //return null;
 
     }
+
     public static void addProduct(String name_product, String cost) throws SQLException, ClassNotFoundException {
         try {
             Connection c = getConnection();
@@ -71,8 +70,7 @@ public class DAOProduct {
                 ps.setInt(2, Integer.parseInt(cost));
                 ps.executeUpdate();
             }
-        }
-        catch(NamingException e){
+        } catch (NamingException e) {
             e.printStackTrace();
         }
 

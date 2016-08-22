@@ -17,17 +17,15 @@ import java.io.IOException;
 public class LoginServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-       // String title = "login";
-       // super.doGet(request, response);
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         HttpSession session = request.getSession();
 
-        request.getRequestDispatcher("../WEB-INF/login.jsp").forward(request, response);
+        request.getRequestDispatcher("../login.jsp").forward(request, response);
         session.removeAttribute("error");
     }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { // авторизация
-       // super.doPost(request, response);
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         HttpSession session = request.getSession();

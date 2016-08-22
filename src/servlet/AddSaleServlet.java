@@ -24,7 +24,7 @@ public class AddSaleServlet extends HttpServlet {
         String date_of_sale = request.getParameter("date_of_sale");
 
         try {
-            DAOSale.addSale(id_seller,id_product,cost_sale, date_of_sale);
+            DAOSale.addSale(id_seller, id_product, cost_sale, date_of_sale);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }

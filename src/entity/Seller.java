@@ -8,7 +8,8 @@ public class Seller {
     String name_seller;
     int id_order;
 
-    public Seller(int size, String name_seller){}
+    public Seller(int size, String name_seller) {
+    }
 
     public Seller(int id_seller, String name_seller, int id_order) {
         this.id_seller = id_seller;

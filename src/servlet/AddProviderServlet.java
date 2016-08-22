@@ -21,10 +21,9 @@ public class AddProviderServlet extends HttpServlet {
         String id_product = request.getParameter("id_product");
         String date_of_delivery = request.getParameter("date_of_delivery");
         String name_provider = request.getParameter("name_provider");
-        System.out.println("name_provider: " + name_provider);
 
         try {
-            DAOProvider.addProvider(id_product, date_of_delivery,  name_provider);
+            DAOProvider.addProvider(id_product, date_of_delivery, name_provider);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }

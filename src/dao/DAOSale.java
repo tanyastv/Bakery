@@ -22,7 +22,8 @@ public class DAOSale {
     }
 
     public static List<Sale> getSale() throws SQLException, ClassNotFoundException {
-        try {Connection c = getConnection();
+        try {
+            Connection c = getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM sale");
             ResultSet resultSet = ps.executeQuery();
 
@@ -34,11 +35,9 @@ public class DAOSale {
                 int cost_sale = resultSet.getInt(4);
                 java.sql.Date date_of_sale = resultSet.getDate(5);
                 sale.add(new Sale(id_sale, id_seller, id_product, cost_sale, date_of_sale));
-               // System.out.println(sale.size());
             }
             return sale;
-        }
-        catch (NamingException e) {
+        } catch (NamingException e) {
             e.printStackTrace();
         }
         return null;
@@ -53,13 +52,13 @@ public class DAOSale {
                 ps.setInt(1, id_sale);
                 ps.executeUpdate();
             }
-        }
-        catch(NamingException e){
+        } catch (NamingException e) {
             e.printStackTrace();
         }
         //return null;
 
     }
+
     public static void addSale(String id_seller, String id_product, String cost_sale, String date_of_sale) throws SQLException, ClassNotFoundException {
         try {
             Connection c = getConnection();
@@ -71,8 +70,7 @@ public class DAOSale {
                 ps.setDate(4, Date.valueOf(date_of_sale));
                 ps.executeUpdate();
             }
-        }
-        catch(NamingException e){
+        } catch (NamingException e) {
             e.printStackTrace();
         }
 

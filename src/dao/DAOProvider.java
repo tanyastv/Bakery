@@ -19,7 +19,8 @@ public class DAOProvider {
     }
 
     public static List<Provider> getProvider() throws SQLException, ClassNotFoundException {
-        try {Connection c = getConnection();
+        try {
+            Connection c = getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM provider");
             ResultSet resultSet = ps.executeQuery();
 
@@ -30,12 +31,10 @@ public class DAOProvider {
                 Date date_of_delivery = resultSet.getDate(3);
                 String name_product = resultSet.getString(4);
 
-                provider.add(new Provider(id_provider,id_product,date_of_delivery,name_product));
-               // System.out.println(provider.size());
+                provider.add(new Provider(id_provider, id_product, date_of_delivery, name_product));
             }
             return provider;
-        }
-        catch (NamingException e) {
+        } catch (NamingException e) {
             e.printStackTrace();
         }
         return null;
@@ -51,13 +50,13 @@ public class DAOProvider {
                 ps.executeUpdate();
             }
             System.out.println("PreparedStatement: " + ps);
-        }
-        catch(NamingException e){
+        } catch (NamingException e) {
             e.printStackTrace();
         }
         //return null;
 
     }
+
     public static void addProvider(String id_product, String date_of_delivery, String name_provider) throws SQLException, ClassNotFoundException {
         try {
             Connection c = getConnection();
@@ -69,8 +68,7 @@ public class DAOProvider {
                 ps.executeUpdate();
             }
             System.out.println("PreparedStatement: " + ps);
-        }
-        catch(NamingException e){
+        } catch (NamingException e) {
             e.printStackTrace();
         }
 

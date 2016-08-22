@@ -30,6 +30,6 @@ public class OrdersServlet extends HttpServlet {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        request.getRequestDispatcher("WEB-INF/orders.jsp").forward(request,response);
+        request.getRequestDispatcher("orders.jsp").forward(request,response);
     }
 }

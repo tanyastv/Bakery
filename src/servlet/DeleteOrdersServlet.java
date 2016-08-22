@@ -25,7 +25,7 @@ public class DeleteOrdersServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         int id_order = Integer.parseInt(request.getParameter("id_order"));
-        System.out.println("id_order: " + id_order);
+
         try {
             DAOOrders.deleteOrders(id_order);
         } catch (SQLException | ClassNotFoundException e) {

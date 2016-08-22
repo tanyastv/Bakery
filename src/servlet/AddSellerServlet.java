@@ -22,13 +22,12 @@ public class AddSellerServlet extends HttpServlet {
         String id_order = request.getParameter("id_order");
 
         try {
-            DAOSeller.addSeller(name_seller,id_order);
+            DAOSeller.addSeller(name_seller, id_order);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         response.sendRedirect("/seller");
     }
-
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");

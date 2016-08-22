@@ -22,7 +22,7 @@ public class AddProductServlet extends HttpServlet {
         String cost = request.getParameter("cost");
 
         try {
-            DAOProduct.addProduct(name_product,cost);
+            DAOProduct.addProduct(name_product, cost);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }

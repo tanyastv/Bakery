@@ -13,10 +13,10 @@ public class Sale {
     int cost_sale;
     Date date_of_sale;
 
-    public Sale(int size){}
+    public Sale(int size) {
+    }
 
-    public Sale(int id_sale, int id_seller, int id_product, int cost_sale, Date date_of_sale)
-    {
+    public Sale(int id_sale, int id_seller, int id_product, int cost_sale, Date date_of_sale) {
         this.id_sale = id_sale;
         this.id_seller = id_seller;
         this.id_product = id_product;
