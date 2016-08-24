@@ -11,7 +11,15 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 /**
- * Created by USER on 22.07.2016.
+ * @author Sarnavskaya
+ */
+
+/**
+ * AddOrdersServlet - класс
+ * doPost - передает данные таким образом, что пользователь сайта уже не видит передаваемые скрипту данные
+ * doGet - отправляет скрипту всю собранную информацию формы
+ *
+ * Метод POST в отличие от метода GET позволяет передавать запросу файлы;
  */
 @WebServlet(name = "servlet.AddOrdersServlet", urlPatterns = "/addorders")
 public class AddOrdersServlet extends HttpServlet {

@@ -9,21 +9,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by USER on 18.07.2016.
+ * @author Sarnavskaya
  */
+
+/**
+ * getConnection - метод для установления соединения с БД
+ * getProduct - метод для выборки данных из сущности Продукты и доюавления их в список
+ * deleteProduct - метод для удаления записей из сущности Продукты
+ * addProduct - метод для добавления записей в сущность Продукты
+ */
+
 public class DAOProduct {
     public static Connection getConnection() throws ClassNotFoundException, SQLException, NamingException {
         String url = "jdbc:mysql://localhost:3306/bakery";
         DriverManager.registerDriver(new com.mysql.jdbc.Driver());
         Connection connection = DriverManager.getConnection(url, "root", "root");
         return connection;
-        /*InitialContext initContext= null;
-        javax.sql.DataSource dataSource = null;
-        initContext = new InitialContext();
-        dataSource = (javax.sql.DataSource) initContext.lookup("java:comp/env/jdbc/appname");
-        Connection connection = dataSource.getConnection();
-        return connection;*/
-
     }
 
     public static List<Product> getProduct() throws SQLException, ClassNotFoundException {
@@ -57,7 +58,6 @@ public class DAOProduct {
         } catch (NamingException e) {
             e.printStackTrace();
         }
-        //return null;
 
     }
 

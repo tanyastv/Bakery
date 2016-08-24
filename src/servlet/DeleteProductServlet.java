@@ -12,8 +12,15 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 /**
- * Created by USER on 18.07.2016.
+ * @author Sarnavskaya
  */
+
+/**
+ * DeleteProductServlet - класс
+ * doPost -
+ * doGet -
+ */
+
 @WebServlet(name = "servlet.DeleteProductServlet", urlPatterns = "/deleteproduct")
 public class DeleteProductServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

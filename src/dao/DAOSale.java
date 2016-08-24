@@ -8,11 +8,17 @@ import java.sql.*;
 import java.sql.Date;
 import java.util.*;
 
-//import static org.apache.taglibs.standard.Version.getSale;
+/**
+ * @author Sarnavskaya
+ */
 
 /**
- * Created by USER on 22.07.2016.
+ * getConnection - метод для установления соединения с БД
+ * getSale - метод для выборки данных из сущности Продажи и доюавления их в список
+ * deleteSale - метод для удаления записей из сущности Продажи
+ * addSale - метод для добавления записей в сущность Продажи
  */
+
 public class DAOSale {
     public static Connection getConnection() throws ClassNotFoundException, SQLException, NamingException {
         String url = "jdbc:mysql://localhost:3306/bakery";
@@ -55,7 +61,6 @@ public class DAOSale {
         } catch (NamingException e) {
             e.printStackTrace();
         }
-        //return null;
 
     }
 

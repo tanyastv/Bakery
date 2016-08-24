@@ -11,8 +11,16 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Created by USER on 12.08.2016.
+ * @author Sarnavskaya
  */
+
+/**
+ * LoginServlet - класс
+ * doGet -
+ * doPost -
+
+ */
+
 @WebServlet(name = "servlet.LoginServlet", urlPatterns = "/login/")
 public class LoginServlet extends HttpServlet {
 
@@ -33,7 +41,7 @@ public class LoginServlet extends HttpServlet {
             User user = User.get(request.getParameter("login"));
 
             if (user != null) {
-                if (User.valid(user, request.getParameter("password"))) { // проверяет, совпадает ли пароль введенный с паролем для данного юзера
+                if (User.valid(user, request.getParameter("password"))) {
                     session.setAttribute("user", user);
                     response.sendRedirect("/");
                 } else {

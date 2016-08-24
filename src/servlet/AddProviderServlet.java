@@ -11,8 +11,15 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 /**
- * Created by USER on 21.07.2016.
+ * @author Sarnavskaya
  */
+
+/**
+ * AddProviderServlet - класс
+ * doPost -
+ * doGet -
+ */
+
 @WebServlet(name = "servlet.AddProviderServlet", urlPatterns = "/addprovider")
 public class AddProviderServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

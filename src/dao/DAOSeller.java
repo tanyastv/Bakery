@@ -7,11 +7,17 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-//import static org.apache.taglibs.standard.Version.getSeller;
+/**
+ * @author Sarnavskaya
+ */
 
 /**
- * Created by USER on 22.07.2016.
+ * getConnection - метод для установления соединения с БД
+ * getSeller - метод для выборки данных из сущности Продавец и доюавления их в список
+ * deleteSeller - метод для удаления записей из сущности Продавец
+ * addSeller - метод для добавления записей в сущность Продавец
  */
+
 public class DAOSeller {
     public static Connection getConnection() throws ClassNotFoundException, SQLException, NamingException {
         String url = "jdbc:mysql://localhost:3306/bakery";
@@ -51,7 +57,6 @@ public class DAOSeller {
         } catch (NamingException e) {
             e.printStackTrace();
         }
-        //return null;
 
     }
 

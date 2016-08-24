@@ -11,9 +11,16 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Created by USER on 15.08.2016.
+ * @author Sarnavskaya
  */
-@WebServlet(name = "servlet.RegistrationServlet", urlPatterns = "/registr/")
+
+/**
+ * RegistrationServlet - класс
+ * doPost -
+ * doGet -
+ */
+
+@WebServlet(name = "servlet.RegistrationServlet", urlPatterns = "/registration/")
 public class RegistrationServlet extends HttpServlet {
     HttpSession session;
 
@@ -40,7 +47,7 @@ public class RegistrationServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         session = request.getSession();
-        request.getRequestDispatcher("../registr.jsp").forward(request, response);
+        request.getRequestDispatcher("../registration.jsp").forward(request, response);
         session.removeAttribute("error");
     }
 }

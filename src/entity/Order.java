@@ -1,8 +1,18 @@
 package entity;
 
 /**
- * Created by USER on 22.07.2016.
+ * @author Sarnavskaya
  */
+
+/**
+ * class Order - класс, описывающий сущность Заказы
+ * id_order - идентификтор заказа
+ * name_order - имя заказа
+ * id_product - продукт
+ * id_provider - поставщик
+ * nds - налог на добавленную стоимость
+ */
+
 public class Order {
     int id_order;
     String name_order;

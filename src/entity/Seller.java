@@ -1,8 +1,16 @@
 package entity;
 
 /**
- * Created by USER on 22.07.2016.
+ * @author Sarnavskaya
  */
+
+/**
+ * class Seller - класс, описывающий сущность Продавцы
+ * id_seller - идентификтор продавца
+ * name_seller - имя продавца
+ * id_order - заказ
+ */
+
 public class Seller {
     int id_seller;
     String name_seller;

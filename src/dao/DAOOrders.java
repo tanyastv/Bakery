@@ -4,16 +4,20 @@ import entity.Order;
 
 import javax.naming.NamingException;
 import java.sql.*;
-//import javax.sql.DataSource;
 import java.util.ArrayList;
 import java.util.List;
 
-
-//import static org.apache.taglibs.standard.Version.getOrder
+/**
+ * @author Sarnavskaya
+ */
 
 /**
- * Created by USER on 22.07.2016.
+ * getConnection - метод для установления соединения с БД
+ * getOrders - метод для выборки данных из сущности Заказы и доюавления их в список
+ * deleteOrders - метод для удаления записей из сущности Заказы
+ * addOrders - метод для добавления записей в сущность Заказы
  */
+
 public class DAOOrders {
     public static Connection getConnection() throws ClassNotFoundException, SQLException, NamingException {
         String url = "jdbc:mysql://localhost:3306/bakery";
@@ -39,11 +43,11 @@ public class DAOOrders {
             }
             return orders;
         } catch (NamingException e) {
+            log.error("NamingException");
             e.printStackTrace();
         }
         return null;
     }
-
 
     public static void deleteOrders(int id_order) throws SQLException, ClassNotFoundException, NamingException {
         try {
@@ -55,10 +59,10 @@ public class DAOOrders {
             }
             System.out.println("PreparedStatement: " + ps);
         } catch (NamingException e) {
+            log.error("NamingException");
             e.printStackTrace();
         }
     }
-    //return null;
 
     public static void addOrders(String name_order, String id_product, String id_provider, String nds) throws SQLException, ClassNotFoundException {
         try {
@@ -72,6 +76,7 @@ public class DAOOrders {
                 ps.executeUpdate();
             }
         } catch (NamingException e) {
+            log.error("NamingException");
             e.printStackTrace();
         }
 

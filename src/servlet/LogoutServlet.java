@@ -9,8 +9,14 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Created by USER on 16.08.2016.
+ * @author Sarnavskaya
  */
+
+/**
+ * LogoutServlet - класс
+ * doGet -
+ */
+
 @WebServlet(name = "servlet.LogoutServlet", urlPatterns = "/exit")
 public class LogoutServlet extends HttpServlet {
 

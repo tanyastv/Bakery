@@ -8,6 +8,17 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * @author Sarnavskaya
+ */
+
+/**
+ * AdminFilterServlet - класс
+ * init -
+ * doFilter -
+ * destroy -
+ */
+
 @WebFilter({"/addProduct", "/product"})
 public class AdminFilterServlet implements Filter {
 
@@ -28,8 +39,8 @@ public class AdminFilterServlet implements Filter {
             }
         }
 
-        request.setAttribute("filterMessage", "You need to be authenticated as admin");
-        request.getRequestDispatcher("../filter.jsp").forward(request, response);
+        request.setAttribute("filterMessage", "To perform this action , you must be an administrator");
+        request.getRequestDispatcher("filter.jsp").forward(request, response);
     }
 
     public void destroy() {

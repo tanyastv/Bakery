@@ -1,8 +1,16 @@
 package entity;
 
 /**
- * Created by USER on 18.07.2016.
+ * @author Sarnavskaya
  */
+
+/**
+ * class Product - класс, описывающий сущность Заказы
+ * id_product - идентификтор продукта
+ * name_product - название продукта
+ * cost - цена
+ */
+
 public class Product {
     int id_product;
     String name_product;

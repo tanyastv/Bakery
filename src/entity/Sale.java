@@ -2,10 +2,19 @@ package entity;
 
 import java.sql.Date;
 
+/**
+ * @author Sarnavskaya
+ */
 
 /**
- * Created by USER on 22.07.2016.
+ * class Sale - класс, описывающий сущность Продажа
+ * id_sale - идентификтор продажи
+ * id_seller - продавец
+ * id_product - продукт
+ * cost_sale - цена продажи
+ * date_of_sale - дата продажи
  */
+
 public class Sale {
     int id_sale;
     int id_seller;

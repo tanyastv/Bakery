@@ -7,7 +7,16 @@ import java.sql.*;
 import java.sql.Date;
 import java.util.*;
 
-//import static org.apache.taglibs.standard.Version.getProvider;
+/**
+ * @author Sarnavskaya
+ */
+
+/**
+ * getConnection - метод для установления соединения с БД
+ * getProvider - метод для выборки данных из сущности Поставщик и доюавления их в список
+ * deleteProvider - метод для удаления записей из сущности Поставщик
+ * addProvider - метод для добавления записей в сущность Поставщик
+ */
 
 public class DAOProvider {
     public static Connection getConnection() throws ClassNotFoundException, SQLException, NamingException {
@@ -53,7 +62,6 @@ public class DAOProvider {
         } catch (NamingException e) {
             e.printStackTrace();
         }
-        //return null;
 
     }
 

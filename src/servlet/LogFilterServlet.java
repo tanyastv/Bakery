@@ -8,8 +8,16 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Created by USER on 21.08.2016.
+ * @author Sarnavskaya
  */
+
+/**
+ * LogFilterServlet - класс
+ * init -
+ * doFilter -
+ * destroy -
+ */
+
 @WebFilter(filterName = "LogFilterServlet")
 public class LogFilterServlet implements Filter {
 
@@ -32,7 +40,6 @@ public class LogFilterServlet implements Filter {
 
     public void destroy() {
     }
-
 
 }
 
