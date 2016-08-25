@@ -3,24 +3,15 @@ package entity;
 import java.sql.Date;
 
 /**
+ * Class describe sale entity
  * @author Sarnavskaya
  */
-
-/**
- * class Sale - класс, описывающий сущность Продажа
- * id_sale - идентификтор продажи
- * id_seller - продавец
- * id_product - продукт
- * cost_sale - цена продажи
- * date_of_sale - дата продажи
- */
-
 public class Sale {
-    int id_sale;
-    int id_seller;
-    int id_product;
-    int cost_sale;
-    Date date_of_sale;
+    private int id_sale;
+    private int id_seller;
+    private int id_product;
+    private int cost_sale;
+    private Date date_of_sale;
 
     public Sale(int size) {
     }

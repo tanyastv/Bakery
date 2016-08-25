@@ -3,22 +3,14 @@ package entity;
 import java.util.Date;
 
 /**
+ * Class describe provider entity
  * @author Sarnavskaya
  */
-
-/**
- * class Provider - класс, описывающий сущность Поставщик
- * id_provider - идентификтор поставщика
- * id_product - имя продукта
- * date_of_delivery - дата поставки
- * name_provider - имя поставщика
- */
-
 public class Provider {
-    int id_provider;
-    int id_product;
-    Date date_of_delivery;
-    String name_provider;
+    private int id_provider;
+    private int id_product;
+    private Date date_of_delivery;
+    private String name_provider;
 
     public Provider(int size, String name_provider) {
     }

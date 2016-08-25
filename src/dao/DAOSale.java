@@ -1,5 +1,6 @@
 package dao;
 
+import entity.Order;
 import entity.Sale;
 
 import javax.naming.NamingException;
@@ -9,17 +10,17 @@ import java.sql.Date;
 import java.util.*;
 
 /**
+ * Class realize access to data of sale entity
  * @author Sarnavskaya
  */
-
-/**
- * getConnection - метод для установления соединения с БД
- * getSale - метод для выборки данных из сущности Продажи и доюавления их в список
- * deleteSale - метод для удаления записей из сущности Продажи
- * addSale - метод для добавления записей в сущность Продажи
- */
-
 public class DAOSale {
+    /**
+     * Create object of connection with database
+     * @return object of connection with database
+     * @throws ClassNotFoundException
+     * @throws SQLException
+     * @throws NamingException
+     */
     public static Connection getConnection() throws ClassNotFoundException, SQLException, NamingException {
         String url = "jdbc:mysql://localhost:3306/bakery";
         DriverManager.registerDriver(new com.mysql.jdbc.Driver());
@@ -27,13 +28,20 @@ public class DAOSale {
         return connection;
     }
 
+    /**
+     * Method that getting list of sale from database
+     * @return list of sale
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     */
     public static List<Sale> getSale() throws SQLException, ClassNotFoundException {
+        ArrayList<Sale> sale = null;
         try {
             Connection c = getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM sale");
             ResultSet resultSet = ps.executeQuery();
 
-            ArrayList<Sale> sale = new ArrayList<>();
+            sale = new ArrayList<>();
             while (resultSet.next()) {
                 int id_sale = resultSet.getInt(1);
                 int id_seller = resultSet.getInt(2);
@@ -42,14 +50,20 @@ public class DAOSale {
                 java.sql.Date date_of_sale = resultSet.getDate(5);
                 sale.add(new Sale(id_sale, id_seller, id_product, cost_sale, date_of_sale));
             }
-            return sale;
+
         } catch (NamingException e) {
             e.printStackTrace();
         }
-        return null;
+        return sale;
     }
 
-
+    /**
+     * Method removes records to database
+     * @param id_sale sale identifier
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     * @throws NamingException
+     */
     public static void deleteSale(int id_sale) throws SQLException, ClassNotFoundException, NamingException {
         try {
             Connection c = getConnection();
@@ -64,6 +78,15 @@ public class DAOSale {
 
     }
 
+    /**
+     * Method adds new sale to database
+     * @param id_seller sellers identifier
+     * @param id_product products identifier
+     * @param cost_sale cost sale
+     * @param date_of_sale date of sale
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     */
     public static void addSale(String id_seller, String id_product, String cost_sale, String date_of_sale) throws SQLException, ClassNotFoundException {
         try {
             Connection c = getConnection();

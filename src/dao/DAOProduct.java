@@ -1,5 +1,6 @@
 package dao;
 
+import entity.Order;
 import entity.Product;
 
 import javax.naming.NamingException;
@@ -9,17 +10,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Class realize access to data of products entity
  * @author Sarnavskaya
  */
-
-/**
- * getConnection - метод для установления соединения с БД
- * getProduct - метод для выборки данных из сущности Продукты и доюавления их в список
- * deleteProduct - метод для удаления записей из сущности Продукты
- * addProduct - метод для добавления записей в сущность Продукты
- */
-
 public class DAOProduct {
+    /**
+     * Create object of connection with database
+     * @return object of connection with database
+     * @throws ClassNotFoundException
+     * @throws SQLException
+     * @throws NamingException
+     */
     public static Connection getConnection() throws ClassNotFoundException, SQLException, NamingException {
         String url = "jdbc:mysql://localhost:3306/bakery";
         DriverManager.registerDriver(new com.mysql.jdbc.Driver());
@@ -27,13 +28,20 @@ public class DAOProduct {
         return connection;
     }
 
+    /**
+     * Method that getting list of products from database
+     * @return list of products
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     */
     public static List<Product> getProduct() throws SQLException, ClassNotFoundException {
+        ArrayList<Product> product = null;
         try {
             Connection c = getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT id_product,name_product,cost from product");
             ResultSet resultSet = ps.executeQuery();
 
-            ArrayList<Product> product = new ArrayList<>();
+            product = new ArrayList<>();
             while (resultSet.next()) {
                 int id_product = resultSet.getInt(1);
                 String name_product = resultSet.getString(2);
@@ -47,6 +55,13 @@ public class DAOProduct {
         return null;
     }
 
+    /**
+     * Method removes records to database
+     * @param id_product products identifier
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     * @throws NamingException
+     */
     public static void deleteProduct(int id_product) throws SQLException, ClassNotFoundException, NamingException {
         try {
             Connection c = getConnection();
@@ -61,6 +76,13 @@ public class DAOProduct {
 
     }
 
+    /**
+     * Method adds new orders to database
+     * @param name_product name of product
+     * @param cost the price of the product
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     */
     public static void addProduct(String name_product, String cost) throws SQLException, ClassNotFoundException {
         try {
             Connection c = getConnection();

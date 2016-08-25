@@ -1,5 +1,6 @@
 package dao;
 
+import entity.Order;
 import entity.Provider;
 
 import javax.naming.NamingException;
@@ -8,48 +9,59 @@ import java.sql.Date;
 import java.util.*;
 
 /**
+ * Class realize access to data of providers entity
  * @author Sarnavskaya
  */
 
-/**
- * getConnection - метод для установления соединения с БД
- * getProvider - метод для выборки данных из сущности Поставщик и доюавления их в список
- * deleteProvider - метод для удаления записей из сущности Поставщик
- * addProvider - метод для добавления записей в сущность Поставщик
- */
-
 public class DAOProvider {
+    /**
+     * Create object of connection with database
+     * @return object of connection with database
+     * @throws ClassNotFoundException
+     * @throws SQLException
+     * @throws NamingException
+     */
     public static Connection getConnection() throws ClassNotFoundException, SQLException, NamingException {
         String url = "jdbc:mysql://localhost:3306/bakery";
         DriverManager.registerDriver(new com.mysql.jdbc.Driver());
         Connection connection = DriverManager.getConnection(url, "root", "root");
         return connection;
-
     }
 
+    /**
+     * Method that getting list of providers from database
+     * @return list of providers
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     */
     public static List<Provider> getProvider() throws SQLException, ClassNotFoundException {
+        ArrayList<Provider> provider = null;
         try {
             Connection c = getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM provider");
             ResultSet resultSet = ps.executeQuery();
 
-            ArrayList<Provider> provider = new ArrayList<>();
+            provider = new ArrayList<>();
             while (resultSet.next()) {
                 int id_provider = resultSet.getInt(1);
                 int id_product = resultSet.getInt(2);
                 Date date_of_delivery = resultSet.getDate(3);
                 String name_product = resultSet.getString(4);
-
                 provider.add(new Provider(id_provider, id_product, date_of_delivery, name_product));
             }
-            return provider;
         } catch (NamingException e) {
             e.printStackTrace();
         }
-        return null;
+        return provider;
     }
 
-
+    /**
+     * Method removes records to database
+     * @param id_provider providers identifier
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     * @throws NamingException
+     */
     public static void deleteProvider(int id_provider) throws SQLException, ClassNotFoundException, NamingException {
         try {
             Connection c = getConnection();
@@ -65,6 +77,14 @@ public class DAOProvider {
 
     }
 
+    /**
+     * Method adds new providers to database
+     * @param id_product products identifier
+     * @param date_of_delivery date of delivery
+     * @param name_provider providers name
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     */
     public static void addProvider(String id_product, String date_of_delivery, String name_provider) throws SQLException, ClassNotFoundException {
         try {
             Connection c = getConnection();

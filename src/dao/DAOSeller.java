@@ -1,5 +1,6 @@
 package dao;
 
+import entity.Order;
 import entity.Seller;
 
 import javax.naming.NamingException;
@@ -8,17 +9,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Class realize access to data of sellers entity
  * @author Sarnavskaya
  */
-
-/**
- * getConnection - метод для установления соединения с БД
- * getSeller - метод для выборки данных из сущности Продавец и доюавления их в список
- * deleteSeller - метод для удаления записей из сущности Продавец
- * addSeller - метод для добавления записей в сущность Продавец
- */
-
 public class DAOSeller {
+    /**
+     * Create object of connection with database
+     * @return object of connection with database
+     * @throws ClassNotFoundException
+     * @throws SQLException
+     * @throws NamingException
+     */
     public static Connection getConnection() throws ClassNotFoundException, SQLException, NamingException {
         String url = "jdbc:mysql://localhost:3306/bakery";
         DriverManager.registerDriver(new com.mysql.jdbc.Driver());
@@ -26,26 +27,40 @@ public class DAOSeller {
         return connection;
     }
 
+    /**
+     * Method that getting list of sellers from database
+     * @return list of sellers
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     */
     public static List<Seller> getSeller() throws SQLException, ClassNotFoundException {
+        ArrayList<Seller> seller = null;
         try {
             Connection c = getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM seller");
             ResultSet resultSet = ps.executeQuery();
 
-            ArrayList<Seller> seller = new ArrayList<>();
+            seller = new ArrayList<>();
             while (resultSet.next()) {
                 int id_seller = resultSet.getInt(1);
                 String name_seller = resultSet.getString(2);
                 int id_order = resultSet.getInt(3);
                 seller.add(new Seller(id_seller, name_seller, id_order));
             }
-            return seller;
+
         } catch (NamingException e) {
             e.printStackTrace();
         }
-        return null;
+        return seller;
     }
 
+    /**
+     * Method removes records to database
+     * @param id_seller sellers identifier
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     * @throws NamingException
+     */
     public static void deleteSeller(int id_seller) throws SQLException, ClassNotFoundException, NamingException {
         try {
             Connection c = getConnection();
@@ -60,6 +75,13 @@ public class DAOSeller {
 
     }
 
+    /**
+     * Method adds new sellers to database
+     * @param name_seller sellers name
+     * @param id_order orders identifier
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     */
     public static void addSeller(String name_seller, String id_order) throws SQLException, ClassNotFoundException {
         try {
             Connection c = getConnection();

@@ -11,18 +11,18 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 /**
+ * Servlet responds to the URL /addorders
  * @author Sarnavskaya
- */
-
-/**
- * AddOrdersServlet - класс
- * doPost - передает данные таким образом, что пользователь сайта уже не видит передаваемые скрипту данные
- * doGet - отправляет скрипту всю собранную информацию формы
- *
- * Метод POST в отличие от метода GET позволяет передавать запросу файлы;
  */
 @WebServlet(name = "servlet.AddOrdersServlet", urlPatterns = "/addorders")
 public class AddOrdersServlet extends HttpServlet {
+    /**
+     * Method that call when POST request came from server
+     * @param request request from client
+     * @param response response to client
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
@@ -40,6 +40,13 @@ public class AddOrdersServlet extends HttpServlet {
         response.sendRedirect("/orders");
     }
 
+    /**
+     * Method that call when GET request came from server
+     * @param request request from client
+     * @param response response to client
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");

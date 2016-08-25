@@ -9,17 +9,18 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
+ * Servlet responds to the URL /exit
  * @author Sarnavskaya
  */
-
-/**
- * LogoutServlet - класс
- * doGet -
- */
-
 @WebServlet(name = "servlet.LogoutServlet", urlPatterns = "/exit")
 public class LogoutServlet extends HttpServlet {
-
+    /**
+     * Method that call when GET request came from server
+     * @param request request from client
+     * @param response response to client
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession(false);
         if (session != null) session.invalidate();

@@ -11,22 +11,30 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 /**
+ * Servlet responds to the URL /seller
  * @author Sarnavskaya
  */
-
-/**
- * SellerServlet - класс
- * doPost -
- * doGet -
- */
-
 @WebServlet(name = "servlet.SellerServlet", urlPatterns = "/seller")
 public class SellerServlet extends HttpServlet {
+    /**
+     * Method that call when POST request came from server
+     * @param request request from client
+     * @param response response to client
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
     }
 
+    /**
+     * Method that call when GET request came from server
+     * @param request request from client
+     * @param response response to client
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");

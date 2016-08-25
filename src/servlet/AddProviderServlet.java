@@ -11,17 +11,18 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 /**
+ * Servlet responds to the URL /addprovider
  * @author Sarnavskaya
  */
-
-/**
- * AddProviderServlet - класс
- * doPost -
- * doGet -
- */
-
 @WebServlet(name = "servlet.AddProviderServlet", urlPatterns = "/addprovider")
 public class AddProviderServlet extends HttpServlet {
+    /**
+     * Method that call when POST request came from server
+     * @param request request from client
+     * @param response response to client
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
@@ -37,6 +38,13 @@ public class AddProviderServlet extends HttpServlet {
         response.sendRedirect("/provider");
     }
 
+    /**
+     * Method that call when GET request came from server
+     * @param request request from client
+     * @param response response to client
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");

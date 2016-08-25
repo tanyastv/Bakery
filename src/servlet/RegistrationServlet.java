@@ -11,20 +11,20 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
+ * Servlet responds to the URL /registration/
  * @author Sarnavskaya
  */
-
-/**
- * RegistrationServlet - класс
- * doPost -
- * doGet -
- */
-
 @WebServlet(name = "servlet.RegistrationServlet", urlPatterns = "/registration/")
 public class RegistrationServlet extends HttpServlet {
     HttpSession session;
 
-
+    /**
+     * Method that call when POST request came from server
+     * @param request request from client
+     * @param response response to client
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         session = request.getSession();
         request.setCharacterEncoding("UTF-8");
@@ -43,6 +43,13 @@ public class RegistrationServlet extends HttpServlet {
         }
     }
 
+    /**
+     * Method that call when GET request came from server
+     * @param request request from client
+     * @param response response to client
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");

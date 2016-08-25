@@ -7,28 +7,14 @@ import java.sql.*;
 import static java.sql.DriverManager.getConnection;
 
 /**
+ * Class describing the users registered in this application
  * @author Sarnavskaya
  */
-
-/**
- * class User - класс Пользователь, описывающий пользователей зарегистрированных в данном приложении
- * id_user - идентификтор пользователя
- * name_user - имя пользователя
- * passwordd - пароль
- * is_admin - поле администратор, отображает является ли пользователь администратором
- *
- * getConnection - метод для установления соединения с БД
- * add - метод для добавления пользователей
- * get - метод для выборки данных из сущности Заказы и доюавления их в список
- * get -
- * valid - метод для проверки совпадает ли введенный пароль с паролем данного юзера
- */
-
 public class User {
-    int id_user;
-    String name_user;
-    String passwordd;
-    int is_admin;
+    private int id_user;
+    private String name_user;
+    private String passwordd;
+    private int is_admin;
 
     public int getId_user() {
         return id_user;
@@ -42,6 +28,10 @@ public class User {
         return passwordd;
     }
 
+    /**
+     * Field displays the user status (administrator/regular user)
+     * @return is_admin
+     */
     public boolean is_admin() {
         return (is_admin == 1);
     }
@@ -52,12 +42,18 @@ public class User {
         this.is_admin = is_admin;
     }
 
+    /**
+     * Create object of connection with database
+     * @return
+     * @throws ClassNotFoundException
+     * @throws SQLException
+     * @throws NamingException
+     */
     public static Connection getConnection() throws ClassNotFoundException, SQLException, NamingException {
         String url = "jdbc:mysql://localhost:3306/bakery";
         DriverManager.registerDriver(new com.mysql.jdbc.Driver());
         Connection connection = DriverManager.getConnection(url, "root", "root");
         return connection;
-
     }
 
     public User(int id_user, String name_user, String passwordd, int is_admin) throws NoSuchAlgorithmException {
@@ -65,6 +61,14 @@ public class User {
         this.id_user = id_user;
     }
 
+    /**
+     * Method adds new user to database
+     * @param name_user user name
+     * @param passwordd user password
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     * @throws NamingException
+     */
     public static void add(String name_user, String passwordd) throws SQLException, ClassNotFoundException, NamingException {
 
         try {
@@ -81,6 +85,15 @@ public class User {
 
     }
 
+    /**
+     * Method that getting list of user from database
+     * @param name_user user name
+     * @return list of user
+     * @throws SQLException
+     * @throws NamingException
+     * @throws NoSuchAlgorithmException
+     * @throws ClassNotFoundException
+     */
     public static User get(String name_user) throws SQLException, NamingException, NoSuchAlgorithmException, ClassNotFoundException {
         User user = null;
 
@@ -104,7 +117,14 @@ public class User {
         return user;
     }
 
-
+    /**
+     * Method that getting list of user from database
+     * @param id_user user identifier
+     * @return list of user
+     * @throws SQLException
+     * @throws NamingException
+     * @throws NoSuchAlgorithmException
+     */
     public static User get(int id_user) throws SQLException, NamingException, NoSuchAlgorithmException {
         User user = null;
 
@@ -129,6 +149,13 @@ public class User {
 
     }
 
+    /**
+     * Method returns the result of the test the entered password with the existing password of the user
+     * @param user user
+     * @param passwordd user password
+     * @return true/false
+     * @throws Exception
+     */
     public static boolean valid(User user, String passwordd) throws Exception {
         try {
             return (user.getPasswordd().equals(passwordd));
@@ -136,8 +163,6 @@ public class User {
             throw e;
         }
     }
-
-
 
 }
 

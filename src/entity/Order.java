@@ -1,27 +1,15 @@
 package entity;
 
 /**
+ * Class describe orders entity
  * @author Sarnavskaya
  */
-
-/**
- * class Order - класс, описывающий сущность Заказы
- * id_order - идентификтор заказа
- * name_order - имя заказа
- * id_product - продукт
- * id_provider - поставщик
- * nds - налог на добавленную стоимость
- */
-
 public class Order {
-    int id_order;
-    String name_order;
-    int id_product;
-    int id_provider;
-    int nds;
-
-    public Order(int size, String name_order) {
-    }
+    private int id_order;
+    private String name_order;
+    private int id_product;
+    private int id_provider;
+    private int nds;
 
     public Order(int id_order, String name_order, int id_product, int id_provider, int nds) {
         this.id_order = id_order;
@@ -29,7 +17,6 @@ public class Order {
         this.id_product = id_product;
         this.id_provider = id_provider;
         this.nds = nds;
-
     }
 
     public int getId_order() {

@@ -8,17 +8,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Class realize access to data of orders entity
  * @author Sarnavskaya
  */
-
-/**
- * getConnection - метод для установления соединения с БД
- * getOrders - метод для выборки данных из сущности Заказы и доюавления их в список
- * deleteOrders - метод для удаления записей из сущности Заказы
- * addOrders - метод для добавления записей в сущность Заказы
- */
-
 public class DAOOrders {
+    /**
+     * Create object of connection with database
+     * @return object of connection with database
+     * @throws ClassNotFoundException
+     * @throws SQLException
+     * @throws NamingException
+     */
     public static Connection getConnection() throws ClassNotFoundException, SQLException, NamingException {
         String url = "jdbc:mysql://localhost:3306/bakery";
         DriverManager.registerDriver(new com.mysql.jdbc.Driver());
@@ -26,13 +26,20 @@ public class DAOOrders {
         return connection;
     }
 
+    /**
+     * Method that getting list of orders from database
+     * @return list of orders
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     */
     public static List<Order> getOrders() throws SQLException, ClassNotFoundException {
+        ArrayList<Order> orders = null;
         try {
             Connection c = getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM orders");
             ResultSet resultSet = ps.executeQuery();
 
-            ArrayList<Order> orders = new ArrayList<>();
+            orders = new ArrayList<>();
             while (resultSet.next()) {
                 int id_order = resultSet.getInt(1);
                 String name_order = resultSet.getString(2);
@@ -41,14 +48,19 @@ public class DAOOrders {
                 int nds = resultSet.getInt(5);
                 orders.add(new Order(id_order, name_order, id_product, id_provider, nds));
             }
-            return orders;
         } catch (NamingException e) {
-            log.error("NamingException");
             e.printStackTrace();
         }
-        return null;
+        return orders;
     }
 
+    /**
+     * Method removes records to database
+     * @param id_order orders identifier
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     * @throws NamingException
+     */
     public static void deleteOrders(int id_order) throws SQLException, ClassNotFoundException, NamingException {
         try {
             Connection c = getConnection();
@@ -59,11 +71,19 @@ public class DAOOrders {
             }
             System.out.println("PreparedStatement: " + ps);
         } catch (NamingException e) {
-            log.error("NamingException");
             e.printStackTrace();
         }
     }
 
+    /**
+     * Method adds new orders to database
+     * @param name_order name of order
+     * @param id_product products identifier
+     * @param id_provider providers identifier
+     * @param nds value-added tax
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     */
     public static void addOrders(String name_order, String id_product, String id_provider, String nds) throws SQLException, ClassNotFoundException {
         try {
             Connection c = getConnection();
@@ -76,7 +96,6 @@ public class DAOOrders {
                 ps.executeUpdate();
             }
         } catch (NamingException e) {
-            log.error("NamingException");
             e.printStackTrace();
         }
 

@@ -1,20 +1,13 @@
 package entity;
 
 /**
+ * Class describe products entity
  * @author Sarnavskaya
  */
-
-/**
- * class Product - класс, описывающий сущность Заказы
- * id_product - идентификтор продукта
- * name_product - название продукта
- * cost - цена
- */
-
 public class Product {
-    int id_product;
-    String name_product;
-    int cost;
+    private int id_product;
+    private String name_product;
+    private int cost;
 
     public Product(int size, String name_product) {
     }

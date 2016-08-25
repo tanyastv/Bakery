@@ -1,20 +1,13 @@
 package entity;
 
 /**
+ * Class describe seller entity
  * @author Sarnavskaya
  */
-
-/**
- * class Seller - класс, описывающий сущность Продавцы
- * id_seller - идентификтор продавца
- * name_seller - имя продавца
- * id_order - заказ
- */
-
 public class Seller {
-    int id_seller;
-    String name_seller;
-    int id_order;
+    private int id_seller;
+    private String name_seller;
+    private int id_order;
 
     public Seller(int size, String name_seller) {
     }
