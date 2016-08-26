@@ -14,6 +14,9 @@ import java.util.List;
  * @author Sarnavskaya
  */
 public class DAOProduct {
+
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(DAOProduct.class);
+
     /**
      * Create object of connection with database
      * @return object of connection with database
@@ -50,6 +53,7 @@ public class DAOProduct {
             }
             return product;
         } catch (NamingException e) {
+            log.error("NamingException");
             e.printStackTrace();
         }
         return null;
@@ -71,6 +75,7 @@ public class DAOProduct {
                 ps.executeUpdate();
             }
         } catch (NamingException e) {
+            log.error("NamingException");
             e.printStackTrace();
         }
 
@@ -93,6 +98,7 @@ public class DAOProduct {
                 ps.executeUpdate();
             }
         } catch (NamingException e) {
+            log.error("NamingException");
             e.printStackTrace();
         }
 

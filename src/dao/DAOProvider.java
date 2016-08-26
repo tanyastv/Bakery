@@ -14,6 +14,9 @@ import java.util.*;
  */
 
 public class DAOProvider {
+
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(DAOProvider.class);
+
     /**
      * Create object of connection with database
      * @return object of connection with database
@@ -50,6 +53,7 @@ public class DAOProvider {
                 provider.add(new Provider(id_provider, id_product, date_of_delivery, name_product));
             }
         } catch (NamingException e) {
+            log.error("NamingException");
             e.printStackTrace();
         }
         return provider;
@@ -72,6 +76,7 @@ public class DAOProvider {
             }
             System.out.println("PreparedStatement: " + ps);
         } catch (NamingException e) {
+            log.error("NamingException");
             e.printStackTrace();
         }
 
@@ -97,6 +102,7 @@ public class DAOProvider {
             }
             System.out.println("PreparedStatement: " + ps);
         } catch (NamingException e) {
+            log.error("NamingException");
             e.printStackTrace();
         }
 

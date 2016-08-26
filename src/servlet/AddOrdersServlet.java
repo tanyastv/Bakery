@@ -15,6 +15,7 @@ import java.sql.SQLException;
  * @author Sarnavskaya
  */
 @WebServlet(name = "servlet.AddOrdersServlet", urlPatterns = "/addorders")
+
 public class AddOrdersServlet extends HttpServlet {
     /**
      * Method that call when POST request came from server
@@ -32,7 +33,6 @@ public class AddOrdersServlet extends HttpServlet {
         String nds = request.getParameter("nds");
 
         try {
-
             DAOOrders.addOrders(name_order, id_product, id_provider, nds);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();

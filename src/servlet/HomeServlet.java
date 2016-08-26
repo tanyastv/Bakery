@@ -1,5 +1,7 @@
 package servlet;
 
+import dao.DAOOrders;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,6 +16,7 @@ import java.sql.SQLException;
  */
 @WebServlet(name = "servlet.HomeServlet", urlPatterns = "/")
 public class HomeServlet extends HttpServlet {
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(HomeServlet.class);
     /**
      * Method that call when POST request came from server
      * @param request request from client
@@ -36,6 +39,7 @@ public class HomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
+        log.info("AAAAAAAAAAA");
         request.getRequestDispatcher("index.jsp").forward(request, response);
     }
 }

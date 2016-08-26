@@ -5,9 +5,9 @@
 </jsp:include>
 
 <div ALIGN="CENTER">
-    <img src="b.png" width="600" height="300" alt="index" ALIGN="CENTER"/>
+    <img src="/3.png" width="600" height="300" alt="index" ALIGN="CENTER"/>
     <h1 align="center">Bakery Shop</h1>
-    <img src="44.png" alt="blue line" ALIGN="CENTER"/>
+    <img src="/44.png" alt="blue line" ALIGN="CENTER"/>
     <br>
     <table align="center" cellspacing='0' width="500">
         <br>

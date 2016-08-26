@@ -1,5 +1,7 @@
 package entity;
 
+import dao.DAOOrders;
+
 import javax.naming.NamingException;
 import java.security.NoSuchAlgorithmException;
 import java.sql.*;
@@ -15,6 +17,8 @@ public class User {
     private String name_user;
     private String passwordd;
     private int is_admin;
+
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(User.class);
 
     public int getId_user() {
         return id_user;
@@ -80,6 +84,7 @@ public class User {
             ps.executeUpdate();
 
         } catch (NamingException e) {
+            log.error("NamingException");
             throw e;
         }
 
@@ -112,13 +117,14 @@ public class User {
                 user = new User(rs.getInt("id_user"), rs.getString("name_user"), rs.getString("passwordd"), rs.getInt("is_admin"));
             }
         } catch (Exception e) {
+            log.error("Exception");
             throw e;
         }
         return user;
     }
 
     /**
-     * Method that getting list of user from database
+     * Method gets list of user from database
      * @param id_user user identifier
      * @return list of user
      * @throws SQLException
@@ -142,6 +148,7 @@ public class User {
                 user = new User(rs.getInt("id_user"), rs.getString("name_user"), rs.getString("passwordd"), rs.getInt("is_admin"));
             }
         } catch (Exception e) {
+            log.error("Exception");
             throw e;
         } finally {
             return user;
@@ -150,7 +157,7 @@ public class User {
     }
 
     /**
-     * Method returns the result of the test the entered password with the existing password of the user
+     * Method validate users password
      * @param user user
      * @param passwordd user password
      * @return true/false
@@ -160,6 +167,7 @@ public class User {
         try {
             return (user.getPasswordd().equals(passwordd));
         } catch (Exception e) {
+            log.error("Exception");
             throw e;
         }
     }

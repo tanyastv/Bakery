@@ -6,12 +6,16 @@ import javax.naming.NamingException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * Class realize access to data of orders entity
  * @author Sarnavskaya
  */
 public class DAOOrders {
+
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(DAOOrders.class);
+
     /**
      * Create object of connection with database
      * @return object of connection with database
@@ -49,6 +53,7 @@ public class DAOOrders {
                 orders.add(new Order(id_order, name_order, id_product, id_provider, nds));
             }
         } catch (NamingException e) {
+            log.error("NamingException");
             e.printStackTrace();
         }
         return orders;
@@ -71,6 +76,7 @@ public class DAOOrders {
             }
             System.out.println("PreparedStatement: " + ps);
         } catch (NamingException e) {
+            log.error("NamingException");
             e.printStackTrace();
         }
     }
@@ -96,6 +102,7 @@ public class DAOOrders {
                 ps.executeUpdate();
             }
         } catch (NamingException e) {
+            log.error("NamingException");
             e.printStackTrace();
         }
 

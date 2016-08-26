@@ -13,6 +13,9 @@ import java.util.List;
  * @author Sarnavskaya
  */
 public class DAOSeller {
+
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(DAOSeller.class);
+
     /**
      * Create object of connection with database
      * @return object of connection with database
@@ -49,6 +52,7 @@ public class DAOSeller {
             }
 
         } catch (NamingException e) {
+            log.error("NamingException");
             e.printStackTrace();
         }
         return seller;
@@ -70,6 +74,7 @@ public class DAOSeller {
                 ps.executeUpdate();
             }
         } catch (NamingException e) {
+            log.error("NamingException");
             e.printStackTrace();
         }
 
@@ -92,6 +97,7 @@ public class DAOSeller {
                 ps.executeUpdate();
             }
         } catch (NamingException e) {
+            log.error("NamingException");
             e.printStackTrace();
         }
 
