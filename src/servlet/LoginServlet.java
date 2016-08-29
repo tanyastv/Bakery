@@ -12,13 +12,15 @@ import java.io.IOException;
 
 /**
  * Servlet responds to the URL /login/
+ *
  * @author Sarnavskaya
  */
 @WebServlet(name = "servlet.LoginServlet", urlPatterns = "/login/")
 public class LoginServlet extends HttpServlet {
     /**
      * Method that call when GET request came from server
-     * @param request request from client
+     *
+     * @param request  request from client
      * @param response response to client
      * @throws ServletException
      * @throws IOException
@@ -34,7 +36,8 @@ public class LoginServlet extends HttpServlet {
 
     /**
      * Method that call when POST request came from server
-     * @param request request from client
+     *
+     * @param request  request from client
      * @param response response to client
      * @throws ServletException
      * @throws IOException
@@ -45,7 +48,6 @@ public class LoginServlet extends HttpServlet {
         HttpSession session = request.getSession();
         try {
             User user = User.get(request.getParameter("login"));
-
             if (user != null) {
                 if (User.valid(user, request.getParameter("password"))) {
                     session.setAttribute("user", user);

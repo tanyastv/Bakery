@@ -2,11 +2,14 @@
 <jsp:include page="includes/header.jsp">
     <jsp:param name="title" value="Provider"/>
 </jsp:include>
-
-<DIV ALIGN="CENTER">
-    <img src="b.png" width="600" height="300" alt="provider" ALIGN="CENTER"/>
-</DIV>
+<title>Provider</title>
 <br>
+<br>
+<br>
+<br>
+<div style="color:#000000;">
+    <h2 align="center"> PROVIDER </h2>
+</div>
 <table align="center" class="simple-little-table" cellspacing='0' width="500">
 
     <tr align="center">
@@ -25,7 +28,9 @@
             <td><c:out value="${provider.getName_provider()}"/></td>
             <td>
                 <a href="deleteprovider?id_provider=${provider.id_provider}">
-                    <img src="3.png"/>
+                    <button type="button" class="btn btn-default btn-lg">
+                        &#x2716;
+                    </button>
                 </a>
             </td>
         </tr>
@@ -47,15 +52,11 @@
 
             <td>
                 <input type="submit" value="Add">
-
             </td>
         </tr>
     </form>
 </table>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<%@ include file="includes/footer.jsp" %>
+</body>
+</html>

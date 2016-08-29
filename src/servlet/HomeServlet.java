@@ -39,7 +39,7 @@ public class HomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
-        log.info("AAAAAAAAAAA");
+        log.info("in index");
         request.getRequestDispatcher("index.jsp").forward(request, response);
     }
 }

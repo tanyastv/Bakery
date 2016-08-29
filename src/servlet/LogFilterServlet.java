@@ -9,12 +9,14 @@ import java.io.IOException;
 
 /**
  * Filter modifies the response to the client server
+ *
  * @author Sarnavskaya
  */
 @WebFilter(filterName = "LogFilterServlet")
 public class LogFilterServlet implements Filter {
     /**
      * Method takes initialization parameters and adjusts the filter configuration object
+     *
      * @param config filter configuration object
      * @throws ServletException
      */
@@ -23,8 +25,9 @@ public class LogFilterServlet implements Filter {
 
     /**
      * Method by which each filter receives the current request and response
-     * @param req query objects
-     * @param resp response objects
+     *
+     * @param req   query objects
+     * @param resp  response objects
      * @param chain filter chain
      * @throws ServletException
      * @throws IOException

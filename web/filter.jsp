@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Filter</title>
     <style type="text/css">
         <%@ include file="css/common.css" %>
     </style>

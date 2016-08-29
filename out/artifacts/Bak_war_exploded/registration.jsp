@@ -1,29 +1,27 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-<title class="clearfix">Registration</title>
+<html lang="en">
 <style type="text/css">
-    <%@ include file="css/form.css" %>
+    <%@ include file="css/bootstrap.css" %>
 </style>
-<div align="center"><h2>Registration</h2></div>
-<div style="color:#FF0000" align="center"><h2>${error}</h2></div>
-<form method="post" class="form-3">
-
-    <div class="clearfix">
-        <label for="login">Login</label>
-        <input type="text" name="login" id="login" placeholder="Login">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Registation</title>
+</head>
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <form method="post" class="form-signin col-md-offset-4 col-md-4" role="form">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            <input type="login" class="form-control" placeholder="Login" required>
+            <input type="password" class="form-control" placeholder="Password" required>
+            <br>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
     </div>
-    <div class="clearfix">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="Password">
-    </div>
-    <div class="clearfix">
-        <input type="submit" name="submit" value="Sign in">
-    </div>
-</form>
+</div>
 </body>
 </html>

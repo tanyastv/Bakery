@@ -2,11 +2,14 @@
 <jsp:include page="includes/header.jsp">
     <jsp:param name="title" value="Sale"/>
 </jsp:include>
-
-<DIV ALIGN="CENTER">
-    <img src="a.png" width="600" height="300" alt="sale" ALIGN="CENTER"/>
-</DIV>
+<title>Sale</title>
 <br>
+<br>
+<br>
+<br>
+<div style="color:#000000; width:100%; height:50px;">
+    <h2 align="center"> SALE </h2>
+</div>
 <table align="center" class="simple-little-table" cellspacing='0' width="500">
 
     <tr align="center">
@@ -28,7 +31,9 @@
             <td><c:out value="${sale.date_of_sale}"/></td>
             <td>
                 <a href="deletesale?id_sale=${sale.id_sale}">
-                    <img src="3.png"/>
+                    <button type="button" class="btn btn-default btn-lg">
+                        &#x2716;
+                    </button>
                 </a>
             </td>
         </tr>
@@ -50,15 +55,11 @@
             </td>
             <td>
                 <input type="submit" value="Add">
-
             </td>
         </tr>
     </form>
 </table>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<%@ include file="includes/footer.jsp" %>
+</body>
+</html>

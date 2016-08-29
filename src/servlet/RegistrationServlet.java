@@ -16,6 +16,7 @@ import java.io.IOException;
  */
 @WebServlet(name = "servlet.RegistrationServlet", urlPatterns = "/registration/")
 public class RegistrationServlet extends HttpServlet {
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(RegistrationServlet.class);
     HttpSession session;
 
     /**
@@ -39,6 +40,7 @@ public class RegistrationServlet extends HttpServlet {
             }
         } catch (Exception e) {
             session.setAttribute("error", e.getMessage());
+            log.error(e.getMessage());
             response.sendRedirect(request.getHeader("Referer"));
         }
     }

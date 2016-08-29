@@ -2,10 +2,14 @@
 <jsp:include page="includes/header.jsp">
     <jsp:param name="title" value="Orders"/>
 </jsp:include>
-<DIV ALIGN="CENTER">
-    <img src="c.png" width="600" height="300" alt="order" ALIGN="CENTER"/>
-</DIV>
+<title>Orders</title>
 <br>
+<br>
+<br>
+<br>
+<div style="color:#000000; width:100%; height:50px;">
+    <h2 align="center"> ORDERS </h2>
+</div>
 <table align="center" class="simple-little-table" cellspacing='0' width="500">
 
     <tr align="center">
@@ -18,9 +22,7 @@
     </tr>
 
     <c:forEach items="${requestScope.orders}" var="orders">
-
         <tr>
-
             <td>${orders.id_order}</td>
             <td><c:out value="${orders.getName_order()}"/></td>
             <td><c:out value="${orders.getId_product()}"/></td>
@@ -28,7 +30,9 @@
             <td><c:out value="${orders.nds}"/></td>
             <td>
                 <a href="deleteorders?id_order=${orders.id_order}">
-                    <img src="3.png"/>
+                    <button type="button" class="btn btn-default btn-lg">
+                        &#x2716;
+                    </button>
                 </a>
             </td>
         </tr>
@@ -50,15 +54,11 @@
             </td>
             <td>
                 <input type="submit" value="Add">
-
             </td>
         </tr>
     </form>
 </table>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<%@ include file="includes/footer.jsp" %>
+</body>
+</html>

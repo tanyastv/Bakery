@@ -2,10 +2,14 @@
 <jsp:include page="includes/header.jsp">
     <jsp:param name="title" value="Seller"/>
 </jsp:include>
-<DIV ALIGN="CENTER">
-    <img src="web/image/a.png" width="600" height="300" alt="seller" ALIGN="CENTER"/>
-</DIV>
+<title>Seller</title>
 <br>
+<br>
+<br>
+<br>
+<div style="color:#000000; width:100%; height:50px;">
+    <h2 align="center"> SELLER </h2>
+</div>
 <table align="center" class="simple-little-table" cellspacing='0' width="500">
 
     <tr align="center">
@@ -16,16 +20,15 @@
     </tr>
 
     <c:forEach items="${requestScope.seller}" var="seller">
-
         <tr>
-
             <td>${seller.id_seller}</td>
             <td><c:out value="${seller.getName_seller()}"/></td>
-
             <td><c:out value="${seller.id_order}"/></td>
             <td>
                 <a href="deleteseller?id_seller=${seller.id_seller}">
-                    <img src="3.png"/>
+                    <button type="button" class="btn btn-default btn-lg">
+                        &#x2716;
+                    </button>
                 </a>
             </td>
         </tr>
@@ -41,15 +44,11 @@
             </td>
             <td>
                 <input type="submit" value="Add">
-
             </td>
         </tr>
     </form>
 </table>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<%@ include file="includes/footer.jsp" %>
+</body>
+</html>
