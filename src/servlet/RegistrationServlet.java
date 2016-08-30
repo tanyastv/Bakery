@@ -12,6 +12,7 @@ import java.io.IOException;
 
 /**
  * Servlet responds to the URL /registration/
+ *
  * @author Sarnavskaya
  */
 @WebServlet(name = "servlet.RegistrationServlet", urlPatterns = "/registration/")
@@ -21,7 +22,8 @@ public class RegistrationServlet extends HttpServlet {
 
     /**
      * Method that call when POST request came from server
-     * @param request request from client
+     *
+     * @param request  request from client
      * @param response response to client
      * @throws ServletException
      * @throws IOException
@@ -47,7 +49,8 @@ public class RegistrationServlet extends HttpServlet {
 
     /**
      * Method that call when GET request came from server
-     * @param request request from client
+     *
+     * @param request  request from client
      * @param response response to client
      * @throws ServletException
      * @throws IOException

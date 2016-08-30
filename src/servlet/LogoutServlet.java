@@ -10,13 +10,15 @@ import java.io.IOException;
 
 /**
  * Servlet responds to the URL /exit
+ *
  * @author Sarnavskaya
  */
 @WebServlet(name = "servlet.LogoutServlet", urlPatterns = "/exit")
 public class LogoutServlet extends HttpServlet {
     /**
      * Method that call when GET request came from server
-     * @param request request from client
+     *
+     * @param request  request from client
      * @param response response to client
      * @throws ServletException
      * @throws IOException

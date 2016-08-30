@@ -16,6 +16,8 @@ import java.sql.SQLException;
  */
 @WebServlet(name = "servlet.SaleServlet", urlPatterns = "/sale")
 public class SaleServlet extends HttpServlet {
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(SaleServlet.class);
+
     /**
      * Method that call when POST request came from server
      * @param request request from client
@@ -41,8 +43,10 @@ public class SaleServlet extends HttpServlet {
         try {
             request.setAttribute("sale", DAOSale.getSale());
         } catch (SQLException e) {
+            log.error("SQLException");
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
+            log.error("ClassNotFoundException");
             e.printStackTrace();
         }
         request.getRequestDispatcher("sale.jsp").forward(request, response);

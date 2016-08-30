@@ -12,13 +12,17 @@ import java.sql.SQLException;
 
 /**
  * Servlet responds to the URL /addprovider
+ *
  * @author Sarnavskaya
  */
 @WebServlet(name = "servlet.AddProviderServlet", urlPatterns = "/addprovider")
 public class AddProviderServlet extends HttpServlet {
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(AddProviderServlet.class);
+
     /**
      * Method that call when POST request came from server
-     * @param request request from client
+     *
+     * @param request  request from client
      * @param response response to client
      * @throws ServletException
      * @throws IOException
@@ -33,6 +37,7 @@ public class AddProviderServlet extends HttpServlet {
         try {
             DAOProvider.addProvider(id_product, date_of_delivery, name_provider);
         } catch (SQLException | ClassNotFoundException e) {
+            log.error("SQLException");
             e.printStackTrace();
         }
         response.sendRedirect("/provider");
@@ -40,7 +45,8 @@ public class AddProviderServlet extends HttpServlet {
 
     /**
      * Method that call when GET request came from server
-     * @param request request from client
+     *
+     * @param request  request from client
      * @param response response to client
      * @throws ServletException
      * @throws IOException

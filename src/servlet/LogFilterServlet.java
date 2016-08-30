@@ -14,6 +14,8 @@ import java.io.IOException;
  */
 @WebFilter(filterName = "LogFilterServlet")
 public class LogFilterServlet implements Filter {
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(LogFilterServlet.class);
+
     /**
      * Method takes initialization parameters and adjusts the filter configuration object
      *

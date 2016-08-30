@@ -13,13 +13,17 @@ import java.sql.SQLException;
 
 /**
  * Servlet responds to the URL /deleteorders
+ *
  * @author Sarnavskaya
  */
 @WebServlet(name = "servlet.DeleteOrdersServlet", urlPatterns = "/deleteorders")
 public class DeleteOrdersServlet extends HttpServlet {
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(DeleteOrdersServlet.class);
+
     /**
      * Method that call when POST request came from server
-     * @param request request from client
+     *
+     * @param request  request from client
      * @param response response to client
      * @throws ServletException
      * @throws IOException
@@ -31,7 +35,8 @@ public class DeleteOrdersServlet extends HttpServlet {
 
     /**
      * Method that call when GET request came from server
-     * @param request request from client
+     *
+     * @param request  request from client
      * @param response response to client
      * @throws ServletException
      * @throws IOException
@@ -44,8 +49,10 @@ public class DeleteOrdersServlet extends HttpServlet {
         try {
             DAOOrders.deleteOrders(id_order);
         } catch (SQLException | ClassNotFoundException e) {
+            log.error("SQLException");
             e.printStackTrace();
         } catch (NamingException e) {
+            log.error("NamingException");
             e.printStackTrace();
         }
         response.sendRedirect("/orders");

@@ -12,14 +12,17 @@ import java.sql.SQLException;
 
 /**
  * Servlet responds to the URL /index
+ *
  * @author Sarnavskaya
  */
 @WebServlet(name = "servlet.HomeServlet", urlPatterns = "/")
 public class HomeServlet extends HttpServlet {
     private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(HomeServlet.class);
+
     /**
      * Method that call when POST request came from server
-     * @param request request from client
+     *
+     * @param request  request from client
      * @param response response to client
      * @throws ServletException
      * @throws IOException
@@ -31,7 +34,8 @@ public class HomeServlet extends HttpServlet {
 
     /**
      * Method that call when GET request came from server
-     * @param request request from client
+     *
+     * @param request  request from client
      * @param response response to client
      * @throws ServletException
      * @throws IOException

@@ -14,7 +14,7 @@
 
     <tr align="center">
         <th width="168"><b>ID</b></th>
-        <th width="200"><b>Product</b></th>
+        <th width="168"><b>Product</b></th>
         <th width="168"><b>Date</b></th>
         <th width="168"><b>Name</b></th>
         <th width="168"><b>Delete</b></th>

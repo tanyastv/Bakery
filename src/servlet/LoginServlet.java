@@ -17,6 +17,8 @@ import java.io.IOException;
  */
 @WebServlet(name = "servlet.LoginServlet", urlPatterns = "/login/")
 public class LoginServlet extends HttpServlet {
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(LoginServlet.class);
+
     /**
      * Method that call when GET request came from server
      *
@@ -59,6 +61,7 @@ public class LoginServlet extends HttpServlet {
                 throw new Exception("entity.User ain't exist");
             }
         } catch (Exception e) {
+            log.error("Exception");
             session.setAttribute("error", e.getMessage());
             response.sendRedirect(request.getHeader("Referer"));
         }
