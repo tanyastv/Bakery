@@ -11,6 +11,6 @@
 <br>
 <br>
 <br>
-<div class="row col-md-offset-4 col-md-4" style="color:#FF0000" align="center"><h2> ${filterMessage}</h2></div>
+<div class="row col-md-offset-4 col-md-4" style="color:#FF0000" align="center"><h3> ${filterMessage}</h3></div>
 </body>
 </html>

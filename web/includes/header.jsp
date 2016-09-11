@@ -13,7 +13,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/index.jsp">Bakery Shop</a>
+            <a class="navbar-brand" href="index.jsp">Bakery Shop</a>
         </div>
         <div class="navbar-collapse collapse">
             <c:choose>

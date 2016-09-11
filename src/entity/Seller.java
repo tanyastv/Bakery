@@ -2,6 +2,7 @@ package entity;
 
 /**
  * Class describe seller entity
+ *
  * @author Sarnavskaya
  */
 public class Seller {

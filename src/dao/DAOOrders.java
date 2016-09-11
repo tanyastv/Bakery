@@ -6,10 +6,12 @@ import javax.naming.NamingException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
 /**
  * Class realize access to data of orders entity
+ *
  * @author Sarnavskaya
  */
 public class DAOOrders {
@@ -18,6 +20,7 @@ public class DAOOrders {
 
     /**
      * Create object of connection with database
+     *
      * @return object of connection with database
      * @throws ClassNotFoundException
      * @throws SQLException
@@ -32,6 +35,7 @@ public class DAOOrders {
 
     /**
      * Method that getting list of orders from database
+     *
      * @return list of orders
      * @throws SQLException
      * @throws ClassNotFoundException
@@ -40,7 +44,9 @@ public class DAOOrders {
         ArrayList<Order> orders = null;
         try {
             Connection c = getConnection();
-            PreparedStatement ps = c.prepareStatement("SELECT * FROM orders");
+            ResourceBundle props = ResourceBundle.getBundle("accountSQL");
+            String res = props.getString("order.select");
+            PreparedStatement ps = c.prepareStatement(res);
             ResultSet resultSet = ps.executeQuery();
 
             orders = new ArrayList<>();
@@ -61,6 +67,7 @@ public class DAOOrders {
 
     /**
      * Method removes records to database
+     *
      * @param id_order orders identifier
      * @throws SQLException
      * @throws ClassNotFoundException
@@ -69,7 +76,9 @@ public class DAOOrders {
     public static void deleteOrders(int id_order) throws SQLException, ClassNotFoundException, NamingException {
         try {
             Connection c = getConnection();
-            PreparedStatement ps = c.prepareStatement("DELETE FROM orders WHERE id_order=?");
+            ResourceBundle props = ResourceBundle.getBundle("accountSQL");
+            String res = props.getString("orders.remove");
+            PreparedStatement ps = c.prepareStatement(res);
             {
                 ps.setInt(1, id_order);
                 ps.executeUpdate();
@@ -83,17 +92,20 @@ public class DAOOrders {
 
     /**
      * Method adds new orders to database
-     * @param name_order name of order
-     * @param id_product products identifier
+     *
+     * @param name_order  name of order
+     * @param id_product  products identifier
      * @param id_provider providers identifier
-     * @param nds value-added tax
+     * @param nds         value-added tax
      * @throws SQLException
      * @throws ClassNotFoundException
      */
     public static void addOrders(String name_order, String id_product, String id_provider, String nds) throws SQLException, ClassNotFoundException {
         try {
             Connection c = getConnection();
-            PreparedStatement ps = c.prepareStatement("INSERT INTO orders (name_order,id_product,id_provider,nds) VALUES (?,?,?,?)");
+            ResourceBundle props = ResourceBundle.getBundle("accountSQL");
+            String res = props.getString("order.insert");
+            PreparedStatement ps = c.prepareStatement(res);
             {
                 ps.setString(1, name_order);
                 ps.setInt(2, Integer.parseInt(id_product));

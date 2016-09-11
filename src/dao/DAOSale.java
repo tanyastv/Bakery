@@ -11,6 +11,7 @@ import java.util.*;
 
 /**
  * Class realize access to data of sale entity
+ *
  * @author Sarnavskaya
  */
 public class DAOSale {
@@ -19,6 +20,7 @@ public class DAOSale {
 
     /**
      * Create object of connection with database
+     *
      * @return object of connection with database
      * @throws ClassNotFoundException
      * @throws SQLException
@@ -33,6 +35,7 @@ public class DAOSale {
 
     /**
      * Method that getting list of sale from database
+     *
      * @return list of sale
      * @throws SQLException
      * @throws ClassNotFoundException
@@ -41,7 +44,9 @@ public class DAOSale {
         ArrayList<Sale> sale = null;
         try {
             Connection c = getConnection();
-            PreparedStatement ps = c.prepareStatement("SELECT * FROM sale");
+            ResourceBundle props = ResourceBundle.getBundle("accountSQL");
+            String res = props.getString("sale.select");
+            PreparedStatement ps = c.prepareStatement(res);
             ResultSet resultSet = ps.executeQuery();
 
             sale = new ArrayList<>();
@@ -63,6 +68,7 @@ public class DAOSale {
 
     /**
      * Method removes records to database
+     *
      * @param id_sale sale identifier
      * @throws SQLException
      * @throws ClassNotFoundException
@@ -71,7 +77,9 @@ public class DAOSale {
     public static void deleteSale(int id_sale) throws SQLException, ClassNotFoundException, NamingException {
         try {
             Connection c = getConnection();
-            PreparedStatement ps = c.prepareStatement("DELETE FROM sale WHERE id_sale=?");
+            ResourceBundle props = ResourceBundle.getBundle("accountSQL");
+            String res = props.getString("sale.remove");
+            PreparedStatement ps = c.prepareStatement(res);
             {
                 ps.setInt(1, id_sale);
                 ps.executeUpdate();
@@ -85,9 +93,10 @@ public class DAOSale {
 
     /**
      * Method adds new sale to database
-     * @param id_seller sellers identifier
-     * @param id_product products identifier
-     * @param cost_sale cost sale
+     *
+     * @param id_seller    sellers identifier
+     * @param id_product   products identifier
+     * @param cost_sale    cost sale
      * @param date_of_sale date of sale
      * @throws SQLException
      * @throws ClassNotFoundException
@@ -95,7 +104,9 @@ public class DAOSale {
     public static void addSale(String id_seller, String id_product, String cost_sale, String date_of_sale) throws SQLException, ClassNotFoundException {
         try {
             Connection c = getConnection();
-            PreparedStatement ps = c.prepareStatement("INSERT INTO sale (id_seller, id_product, cost_sale, date_of_sale) VALUES (?,?,?,?)");
+            ResourceBundle props = ResourceBundle.getBundle("accountSQL");
+            String res = props.getString("sale.insert");
+            PreparedStatement ps = c.prepareStatement(res);
             {
                 ps.setInt(1, Integer.parseInt(String.valueOf(id_seller)));
                 ps.setInt(2, Integer.parseInt(String.valueOf(id_product)));

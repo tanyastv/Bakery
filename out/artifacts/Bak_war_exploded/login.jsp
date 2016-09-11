@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="includes/preludes.jsp" %>
 <jsp:include page="includes/header.jsp">
+    <jsp:param name="lang" value="${user}"/>
     <jsp:param name="title" value="Home"/>
     <jsp:param name="user" value="${user}"/>
 </jsp:include>
@@ -19,5 +20,6 @@
         </form>
     </div>
 </div>
+<div class="row col-md-offset-4 col-md-4" style="color:#FF0000" align="center"><h3> ${error}</h3></div>
 </body>
 </html>

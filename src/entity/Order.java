@@ -2,6 +2,7 @@ package entity;
 
 /**
  * Class describe orders entity
+ *
  * @author Sarnavskaya
  */
 public class Order {

@@ -4,6 +4,7 @@ import java.util.Date;
 
 /**
  * Class describe provider entity
+ *
  * @author Sarnavskaya
  */
 public class Provider {

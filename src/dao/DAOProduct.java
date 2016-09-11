@@ -8,9 +8,11 @@ import javax.naming.NamingException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 
 /**
  * Class realize access to data of products entity
+ *
  * @author Sarnavskaya
  */
 public class DAOProduct {
@@ -19,6 +21,7 @@ public class DAOProduct {
 
     /**
      * Create object of connection with database
+     *
      * @return object of connection with database
      * @throws ClassNotFoundException
      * @throws SQLException
@@ -33,6 +36,7 @@ public class DAOProduct {
 
     /**
      * Method that getting list of products from database
+     *
      * @return list of products
      * @throws SQLException
      * @throws ClassNotFoundException
@@ -41,7 +45,9 @@ public class DAOProduct {
         ArrayList<Product> product = null;
         try {
             Connection c = getConnection();
-            PreparedStatement ps = c.prepareStatement("SELECT id_product,name_product,cost from product");
+            ResourceBundle props = ResourceBundle.getBundle("accountSQL");
+            String res = props.getString("product.select");
+            PreparedStatement ps = c.prepareStatement(res);
             ResultSet resultSet = ps.executeQuery();
 
             product = new ArrayList<>();
@@ -61,6 +67,7 @@ public class DAOProduct {
 
     /**
      * Method removes records to database
+     *
      * @param id_product products identifier
      * @throws SQLException
      * @throws ClassNotFoundException
@@ -69,7 +76,9 @@ public class DAOProduct {
     public static void deleteProduct(int id_product) throws SQLException, ClassNotFoundException, NamingException {
         try {
             Connection c = getConnection();
-            PreparedStatement ps = c.prepareStatement("DELETE FROM product WHERE id_product=?");
+            ResourceBundle props = ResourceBundle.getBundle("accountSQL");
+            String res = props.getString("product.remove");
+            PreparedStatement ps = c.prepareStatement(res);
             {
                 ps.setInt(1, id_product);
                 ps.executeUpdate();
@@ -83,15 +92,18 @@ public class DAOProduct {
 
     /**
      * Method adds new orders to database
+     *
      * @param name_product name of product
-     * @param cost the price of the product
+     * @param cost         the price of the product
      * @throws SQLException
      * @throws ClassNotFoundException
      */
     public static void addProduct(String name_product, String cost) throws SQLException, ClassNotFoundException {
         try {
             Connection c = getConnection();
-            PreparedStatement ps = c.prepareStatement("INSERT INTO product (name_product,cost) VALUES (?,?)");
+            ResourceBundle props = ResourceBundle.getBundle("accountSQL");
+            String res = props.getString("product.insert");
+            PreparedStatement ps = c.prepareStatement(res);
             {
                 ps.setString(1, name_product);
                 ps.setInt(2, Integer.parseInt(cost));

@@ -2,6 +2,7 @@ package entity;
 
 /**
  * Class describe products entity
+ *
  * @author Sarnavskaya
  */
 public class Product {

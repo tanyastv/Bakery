@@ -38,7 +38,7 @@ public class RegistrationServlet extends HttpServlet {
 
                 response.sendRedirect("/");
             } else {
-                throw new Exception("entity.User exists");
+                throw new Exception("User exists");
             }
         } catch (Exception e) {
             session.setAttribute("error", e.getMessage());

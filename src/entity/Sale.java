@@ -4,6 +4,7 @@ import java.sql.Date;
 
 /**
  * Class describe sale entity
+ *
  * @author Sarnavskaya
  */
 public class Sale {

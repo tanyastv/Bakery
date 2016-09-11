@@ -58,7 +58,7 @@ public class LoginServlet extends HttpServlet {
                     throw new Exception("Incorrect password");
                 }
             } else {
-                throw new Exception("entity.User ain't exist");
+                throw new Exception("User ain't exist");
             }
         } catch (Exception e) {
             log.error("Exception");

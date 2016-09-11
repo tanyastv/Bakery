@@ -2,30 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f72c708-0b6a-4795-b8f2-ccdaf66d9df6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/accountSQL.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/text_en_US.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/text_ru_RU.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/dao/DAOOrders.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/dao/DAOOrders.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/dao/DAOProduct.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/dao/DAOProduct.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/dao/DAOProvider.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/dao/DAOProvider.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/dao/DAOSale.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/dao/DAOSale.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/dao/DAOSeller.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/dao/DAOSeller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/entity/Order.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/entity/Order.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/entity/Product.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/entity/Product.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/entity/Provider.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/entity/Provider.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/entity/Sale.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/entity/Sale.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/entity/Seller.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/entity/Seller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/entity/User.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/entity/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/AddOrdersServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/AddOrdersServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/AddProductServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/AddProductServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/AddProviderServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/AddProviderServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/AddSaleServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/AddSaleServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/AddSellerServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/AddSellerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/AdminFilterServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/AdminFilterServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/DeleteOrdersServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/DeleteOrdersServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/DeleteProductServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/DeleteProductServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/DeleteProviderServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/DeleteProviderServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/DeleteSaleServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/DeleteSaleServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/DeleteSellerServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/DeleteSellerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/HomeServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/HomeServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/LogFilterServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/LogFilterServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/LoginServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/LoginServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/LogoutServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/LogoutServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/OrdersServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/OrdersServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/ProductServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/ProductServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/ProviderServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/ProviderServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/RegistrationServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/RegistrationServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/SaleServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/SaleServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/SellerServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/WEB-INF/classes/servlet/SellerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/dao/DAOOrders.class" afterPath="$PROJECT_DIR$/out/production/Bak/dao/DAOOrders.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/dao/DAOProduct.class" afterPath="$PROJECT_DIR$/out/production/Bak/dao/DAOProduct.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/dao/DAOProvider.class" afterPath="$PROJECT_DIR$/out/production/Bak/dao/DAOProvider.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/dao/DAOSale.class" afterPath="$PROJECT_DIR$/out/production/Bak/dao/DAOSale.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/dao/DAOSeller.class" afterPath="$PROJECT_DIR$/out/production/Bak/dao/DAOSeller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/entity/Order.class" afterPath="$PROJECT_DIR$/out/production/Bak/entity/Order.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/entity/Product.class" afterPath="$PROJECT_DIR$/out/production/Bak/entity/Product.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/entity/Provider.class" afterPath="$PROJECT_DIR$/out/production/Bak/entity/Provider.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/entity/Sale.class" afterPath="$PROJECT_DIR$/out/production/Bak/entity/Sale.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/entity/Seller.class" afterPath="$PROJECT_DIR$/out/production/Bak/entity/Seller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/entity/User.class" afterPath="$PROJECT_DIR$/out/production/Bak/entity/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/AddOrdersServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/AddOrdersServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/AddProductServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/AddProductServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/AddProviderServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/AddProviderServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/AddSaleServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/AddSaleServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/AddSellerServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/AddSellerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/AdminFilterServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/AdminFilterServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/DeleteOrdersServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/DeleteOrdersServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/DeleteProductServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/DeleteProductServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/DeleteProviderServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/DeleteProviderServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/DeleteSaleServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/DeleteSaleServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/DeleteSellerServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/DeleteSellerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/HomeServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/HomeServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/LogFilterServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/LogFilterServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/LoginServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/LoginServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/LogoutServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/LogoutServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/OrdersServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/OrdersServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/ProductServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/ProductServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/ProviderServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/ProviderServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/RegistrationServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/RegistrationServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/SaleServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/SaleServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Bak/servlet/SellerServlet.class" afterPath="$PROJECT_DIR$/out/production/Bak/servlet/SellerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/AddOrdersServlet.java" afterPath="$PROJECT_DIR$/src/servlet/AddOrdersServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/AddProductServlet.java" afterPath="$PROJECT_DIR$/src/servlet/AddProductServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/AddProviderServlet.java" afterPath="$PROJECT_DIR$/src/servlet/AddProviderServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/AddSaleServlet.java" afterPath="$PROJECT_DIR$/src/servlet/AddSaleServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/AddSellerServlet.java" afterPath="$PROJECT_DIR$/src/servlet/AddSellerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/AdminFilterServlet.java" afterPath="$PROJECT_DIR$/src/servlet/AdminFilterServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/DeleteOrdersServlet.java" afterPath="$PROJECT_DIR$/src/servlet/DeleteOrdersServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/DeleteProductServlet.java" afterPath="$PROJECT_DIR$/src/servlet/DeleteProductServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/DeleteProviderServlet.java" afterPath="$PROJECT_DIR$/src/servlet/DeleteProviderServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/DeleteSaleServlet.java" afterPath="$PROJECT_DIR$/src/servlet/DeleteSaleServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/DeleteSellerServlet.java" afterPath="$PROJECT_DIR$/src/servlet/DeleteSellerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/HomeServlet.java" afterPath="$PROJECT_DIR$/src/servlet/HomeServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/LogFilterServlet.java" afterPath="$PROJECT_DIR$/src/servlet/LogFilterServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/css/bootstrap.css" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/filter.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/filter.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/includes/header.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/includes/header.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Bak_war_exploded/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/DAOOrders.java" afterPath="$PROJECT_DIR$/src/dao/DAOOrders.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/DAOProduct.java" afterPath="$PROJECT_DIR$/src/dao/DAOProduct.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/DAOProvider.java" afterPath="$PROJECT_DIR$/src/dao/DAOProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/DAOSale.java" afterPath="$PROJECT_DIR$/src/dao/DAOSale.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/DAOSeller.java" afterPath="$PROJECT_DIR$/src/dao/DAOSeller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/Order.java" afterPath="$PROJECT_DIR$/src/entity/Order.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/Product.java" afterPath="$PROJECT_DIR$/src/entity/Product.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/Provider.java" afterPath="$PROJECT_DIR$/src/entity/Provider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/Sale.java" afterPath="$PROJECT_DIR$/src/entity/Sale.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/Seller.java" afterPath="$PROJECT_DIR$/src/entity/Seller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/User.java" afterPath="$PROJECT_DIR$/src/entity/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/LoginServlet.java" afterPath="$PROJECT_DIR$/src/servlet/LoginServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/LogoutServlet.java" afterPath="$PROJECT_DIR$/src/servlet/LogoutServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/OrdersServlet.java" afterPath="$PROJECT_DIR$/src/servlet/OrdersServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/ProductServlet.java" afterPath="$PROJECT_DIR$/src/servlet/ProductServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/ProviderServlet.java" afterPath="$PROJECT_DIR$/src/servlet/ProviderServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/RegistrationServlet.java" afterPath="$PROJECT_DIR$/src/servlet/RegistrationServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/SaleServlet.java" afterPath="$PROJECT_DIR$/src/servlet/SaleServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/SellerServlet.java" afterPath="$PROJECT_DIR$/src/servlet/SellerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/web/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/bootstrap.css" afterPath="$PROJECT_DIR$/web/css/bootstrap.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/filter.jsp" afterPath="$PROJECT_DIR$/web/filter.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/registration.jsp" afterPath="$PROJECT_DIR$/web/registration.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/includes/header.jsp" afterPath="$PROJECT_DIR$/web/includes/header.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
     </list>
     <ignored path="Bak.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,7 +124,31 @@
     <favorites_list name="Bak" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="text_en_US.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/text_en_US.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="text_ru_RU.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/text_ru_RU.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -77,36 +171,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/css/common.css" />
-        <option value="$PROJECT_DIR$/web/header.jsp" />
-        <option value="$PROJECT_DIR$/web/footer.jsp" />
-        <option value="$PROJECT_DIR$/web/includes/footer.jsp" />
-        <option value="$PROJECT_DIR$/web/includes/preludes.jsp" />
-        <option value="$PROJECT_DIR$/src/entity/Order.java" />
-        <option value="$PROJECT_DIR$/src/entity/Provider.java" />
-        <option value="$PROJECT_DIR$/src/entity/Sale.java" />
-        <option value="$PROJECT_DIR$/src/entity/Seller.java" />
-        <option value="$PROJECT_DIR$/src/entity/Product.java" />
-        <option value="$PROJECT_DIR$/src/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/dao/DAOOrders.java" />
-        <option value="$PROJECT_DIR$/src/dao/DAOProduct.java" />
-        <option value="$PROJECT_DIR$/src/dao/DAOProvider.java" />
-        <option value="$PROJECT_DIR$/src/dao/DAOSale.java" />
-        <option value="$PROJECT_DIR$/src/dao/DAOSeller.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/provider.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/entity/User.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/web/includes/header.jsp" />
         <option value="$PROJECT_DIR$/web/seller.jsp" />
         <option value="$PROJECT_DIR$/web/sale.jsp" />
         <option value="$PROJECT_DIR$/web/product.jsp" />
         <option value="$PROJECT_DIR$/web/orders.jsp" />
         <option value="$PROJECT_DIR$/web/provider.jsp" />
         <option value="$PROJECT_DIR$/web/registration.jsp" />
-        <option value="$PROJECT_DIR$/web/filter.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/AddProductServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/AdminFilterServlet.java" />
@@ -121,13 +195,33 @@
         <option value="$PROJECT_DIR$/src/servlet/DeleteSellerServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/HomeServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/LogFilterServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/OrdersServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/ProductServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/ProviderServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/RegistrationServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/SaleServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/SellerServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/web/filter.jsp" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
+        <option value="$PROJECT_DIR$/web/ru/filter.jsp" />
+        <option value="$PROJECT_DIR$/web/ru/login.jsp" />
+        <option value="$PROJECT_DIR$/web/en/filter.jsp" />
+        <option value="$PROJECT_DIR$/src/dao/DAOSale.java" />
+        <option value="$PROJECT_DIR$/web/includes/header.jsp" />
+        <option value="$PROJECT_DIR$/resources/accountSQL.properties" />
+        <option value="$PROJECT_DIR$/src/dao/DAOProduct.java" />
+        <option value="$PROJECT_DIR$/src/dao/DAOProvider.java" />
+        <option value="$PROJECT_DIR$/src/dao/DAOSeller.java" />
+        <option value="$PROJECT_DIR$/src/entity/Order.java" />
+        <option value="$PROJECT_DIR$/src/entity/Product.java" />
+        <option value="$PROJECT_DIR$/src/entity/Seller.java" />
+        <option value="$PROJECT_DIR$/src/entity/Sale.java" />
+        <option value="$PROJECT_DIR$/src/entity/Provider.java" />
+        <option value="$PROJECT_DIR$/src/servlet/SaleServlet.java" />
+        <option value="$PROJECT_DIR$/web/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/web/css/bootstrap-theme.css" />
+        <option value="$PROJECT_DIR$/src/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/servlet/RegistrationServlet.java" />
+        <option value="$PROJECT_DIR$/src/dao/DAOOrders.java" />
       </list>
     </option>
   </component>
@@ -210,30 +304,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bak" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bak" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bak" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="PackagesPane">
         <subPane />
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -258,6 +332,104 @@
             <PATH_ELEMENT USER_OBJECT="lib">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servlet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resource Bundle 'text'" />
+              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -287,16 +459,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\USER\Bak\web" />
+      <recent name="D:\USER\Bak\web\ru" />
       <recent name="D:\USER\Bak\web\css" />
       <recent name="D:\USER\Bak\web\image" />
       <recent name="D:\USER\Bak\web\WEB-INF" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\USER\Bak\web\en" />
       <recent name="D:\USER\Bak\web" />
       <recent name="D:\USER\Bak\web\WEB-INF" />
       <recent name="D:\USER\Bak\web\image" />
       <recent name="D:\USER\Bak" />
-      <recent name="D:\USER\Bak\web\includes" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.index.jsp">
@@ -1001,11 +1175,23 @@
       <workItem from="1472375253429" duration="4648000" />
       <workItem from="1472463805724" duration="29404000" />
       <workItem from="1472549767856" duration="2761000" />
+      <workItem from="1472556088616" duration="510000" />
+      <workItem from="1472574660226" duration="590000" />
+      <workItem from="1472575303687" duration="678000" />
+      <workItem from="1472623832462" duration="1226000" />
+      <workItem from="1472974857252" duration="15406000" />
+      <workItem from="1473171364766" duration="570000" />
+      <workItem from="1473323931483" duration="1924000" />
+      <workItem from="1473326460747" duration="1626000" />
+      <workItem from="1473369406541" duration="760000" />
+      <workItem from="1473409939301" duration="2421000" />
+      <workItem from="1473412540203" duration="1336000" />
+      <workItem from="1473623972888" duration="1420000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="376413000" />
+    <option name="totallyTimeSpent" value="404880000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1018,7 +1204,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1030,13 +1216,13 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829046" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15057284" sideWeight="0.4407028" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.004909984" sideWeight="0.4407028" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19667171" sideWeight="0.81621623" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19894099" sideWeight="0.81621623" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23582089" sideWeight="0.18378378" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.013740458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20801815" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24886191" sideWeight="0.4918415" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1051,6 +1237,38 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29623568" sideWeight="0.48956662" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21931261" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.28391168" sideWeight="0.5592972" order="1" side_tool="true" content_ui="tabs" x="310" y="309" width="757" height="180" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829046" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20801815" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24886191" sideWeight="0.4918415" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.101472996" sideWeight="0.49394855" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.004909984" sideWeight="0.4407028" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29623568" sideWeight="0.48956662" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1452345" sideWeight="0.81621623" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23582089" sideWeight="0.18378378" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21931261" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16490166" sideWeight="0.21463415" order="3" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1065,7 +1283,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/entity/User.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1074,359 +1300,366 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/en/index.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/en/orders.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/en/filter.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/DAOProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="100" column="41" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/DAOSale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="106" column="41" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/DAOSeller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="99" column="41" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/DAOOrders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="55" column="41" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="41" />
+        <state relative-caret-position="300">
+          <caret line="109" column="35" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/DAOProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="380">
+          <caret line="111" column="35" selection-start-line="111" selection-start-column="35" selection-end-line="111" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/delete.png" />
-    <entry file="file://$PROJECT_DIR$/web/1.png" />
-    <entry file="file://$PROJECT_DIR$/web/image/blue.png" />
-    <entry file="file://$PROJECT_DIR$/web/delete.png" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/delete.png" />
-    <entry file="file://$PROJECT_DIR$/web/grand-kanon.jpg" />
-    <entry file="file://$PROJECT_DIR$/web/css/form.css">
+    <entry file="file://$PROJECT_DIR$/src/dao/DAOSale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3132">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="320">
+          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/common.css">
+    <entry file="file://$PROJECT_DIR$/src/dao/DAOSeller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2872">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="320">
+          <caret line="106" column="45" selection-start-line="106" selection-start-column="45" selection-end-line="106" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/src/entity/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60799">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/includes/footer.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/entity/Seller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="380">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/bootstrap-theme.css">
+    <entry file="file://$PROJECT_DIR$/src/entity/Sale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/User.java">
+    <entry file="file://$PROJECT_DIR$/src/entity/Provider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="86" column="41" selection-start-line="86" selection-start-column="41" selection-end-line="86" selection-end-column="41" />
-          <folding>
-            <marker date="1472220137545" expanded="true" signature="2270:2337" ph="INSERT INTO users... " />
-            <marker date="1472220137545" expanded="true" signature="3174:3213" ph="SELECT * FRO... users" />
-            <marker date="1472220137545" expanded="true" signature="4151:4188" ph="SELECT * FRO... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddOrdersServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="240">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/AddProductServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        <state relative-caret-position="240">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/AddProviderServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="220">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/AddSaleServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/AddSellerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="19" column="105" selection-start-line="19" selection-start-column="105" selection-end-line="19" selection-end-column="105" />
-          <folding />
+        <state relative-caret-position="380">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/AdminFilterServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="368">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/DeleteOrdersServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="20" column="108" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="108" />
+        <state relative-caret-position="340">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/DeleteProductServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-472">
-          <caret line="20" column="109" selection-start-line="20" selection-start-column="109" selection-end-line="20" selection-end-column="109" />
+        <state relative-caret-position="340">
+          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/DeleteProviderServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="20" column="110" selection-start-line="20" selection-start-column="110" selection-end-line="20" selection-end-column="110" />
-          <folding />
+        <state relative-caret-position="260">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/DeleteSaleServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="20" column="106" selection-start-line="20" selection-start-column="106" selection-end-line="20" selection-end-column="106" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/DeleteSellerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="20" column="108" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="108" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/LoginServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet/HomeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-620">
-          <caret line="19" column="101" selection-start-line="19" selection-start-column="101" selection-end-line="19" selection-end-column="101" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/LogoutServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-          <folding />
+        <state relative-caret-position="380">
+          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/OrdersServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="19" column="102" selection-start-line="19" selection-start-column="102" selection-end-line="19" selection-end-column="102" />
+        <state relative-caret-position="300">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/ProductServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="19" column="103" selection-start-line="19" selection-start-column="103" selection-end-line="19" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/LogFilterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-440">
-          <caret line="16" column="105" selection-start-line="16" selection-start-column="105" selection-end-line="16" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/HomeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="19" column="100" selection-start-line="19" selection-start-column="100" selection-end-line="19" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/SellerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/SaleServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="18" column="100" selection-start-line="18" selection-start-column="100" selection-end-line="18" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/RegistrationServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="19" column="108" selection-start-line="19" selection-start-column="108" selection-end-line="19" selection-end-column="108" />
+        <state relative-caret-position="360">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/ProviderServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="19" column="104" selection-start-line="19" selection-start-column="104" selection-end-line="19" selection-end-column="104" />
-          <folding />
+        <state relative-caret-position="320">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/includes/header.jsp">
+    <entry file="file://$PROJECT_DIR$/src/servlet/SaleServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/SellerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/bootstrap-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/orders.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/includes/preludes.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="43" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/filter.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state relative-caret-position="320">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/LogFilterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="940">
+          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="600">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+    <entry file="file://$PROJECT_DIR$/web/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="260">
+          <caret line="109" column="19" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/orders.jsp">
+    <entry file="file://$PROJECT_DIR$/web/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="-340">
+          <caret line="331" column="34" selection-start-line="331" selection-start-column="34" selection-end-line="331" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/product.jsp">
+    <entry file="file://$PROJECT_DIR$/web/includes/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="660">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/provider.jsp">
+    <entry file="file://$PROJECT_DIR$/src/servlet/RegistrationServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        <state relative-caret-position="1140">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/registration.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state relative-caret-position="440">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/sale.jsp">
+    <entry file="file://$PROJECT_DIR$/src/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        <state relative-caret-position="3280">
+          <caret line="178" column="20" selection-start-line="178" selection-start-column="20" selection-end-line="178" selection-end-column="20" />
+          <folding>
+            <marker date="1473410868436" expanded="true" signature="2295:2362" ph="INSERT INTO users... " />
+            <marker date="1473410868436" expanded="true" signature="3206:3245" ph="SELECT * FRO... users" />
+            <marker date="1473410868436" expanded="true" signature="4190:4227" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/seller.jsp">
+    <entry file="file://$PROJECT_DIR$/src/entity/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        <state relative-caret-position="-160">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/accountSQL.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/AddOrdersServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/DAOOrders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/product.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/text_en_US.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/text_ru_RU.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
       </provider>
     </entry>
   </component>

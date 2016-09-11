@@ -10,6 +10,7 @@ import static java.sql.DriverManager.getConnection;
 
 /**
  * Class describing the users registered in this application
+ *
  * @author Sarnavskaya
  */
 public class User {
@@ -34,6 +35,7 @@ public class User {
 
     /**
      * Field displays the user status (administrator/regular user)
+     *
      * @return is_admin
      */
     public boolean is_admin() {
@@ -48,6 +50,7 @@ public class User {
 
     /**
      * Create object of connection with database
+     *
      * @return
      * @throws ClassNotFoundException
      * @throws SQLException
@@ -67,12 +70,14 @@ public class User {
 
     /**
      * Method adds new user to database
+     *
      * @param name_user user name
      * @param passwordd user password
      * @throws SQLException
      * @throws ClassNotFoundException
      * @throws NamingException
      */
+
     public static void add(String name_user, String passwordd) throws SQLException, ClassNotFoundException, NamingException {
 
         try {
@@ -92,6 +97,7 @@ public class User {
 
     /**
      * Method that getting list of user from database
+     *
      * @param name_user user name
      * @return list of user
      * @throws SQLException
@@ -125,6 +131,7 @@ public class User {
 
     /**
      * Method gets list of user from database
+     *
      * @param id_user user identifier
      * @return list of user
      * @throws SQLException
@@ -158,7 +165,8 @@ public class User {
 
     /**
      * Method validate users password
-     * @param user user
+     *
+     * @param user      user
      * @param passwordd user password
      * @return true/false
      * @throws Exception

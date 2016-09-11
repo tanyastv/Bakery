@@ -10,6 +10,7 @@ import java.util.*;
 
 /**
  * Class realize access to data of providers entity
+ *
  * @author Sarnavskaya
  */
 
@@ -19,6 +20,7 @@ public class DAOProvider {
 
     /**
      * Create object of connection with database
+     *
      * @return object of connection with database
      * @throws ClassNotFoundException
      * @throws SQLException
@@ -33,6 +35,7 @@ public class DAOProvider {
 
     /**
      * Method that getting list of providers from database
+     *
      * @return list of providers
      * @throws SQLException
      * @throws ClassNotFoundException
@@ -41,7 +44,9 @@ public class DAOProvider {
         ArrayList<Provider> provider = null;
         try {
             Connection c = getConnection();
-            PreparedStatement ps = c.prepareStatement("SELECT * FROM provider");
+            ResourceBundle props = ResourceBundle.getBundle("accountSQL");
+            String res = props.getString("provider.select");
+            PreparedStatement ps = c.prepareStatement(res);
             ResultSet resultSet = ps.executeQuery();
 
             provider = new ArrayList<>();
@@ -61,6 +66,7 @@ public class DAOProvider {
 
     /**
      * Method removes records to database
+     *
      * @param id_provider providers identifier
      * @throws SQLException
      * @throws ClassNotFoundException
@@ -69,7 +75,9 @@ public class DAOProvider {
     public static void deleteProvider(int id_provider) throws SQLException, ClassNotFoundException, NamingException {
         try {
             Connection c = getConnection();
-            PreparedStatement ps = c.prepareStatement("DELETE FROM provider WHERE id_provider=?");
+            ResourceBundle props = ResourceBundle.getBundle("accountSQL");
+            String res = props.getString("provider.remove");
+            PreparedStatement ps = c.prepareStatement(res);
             {
                 ps.setInt(1, id_provider);
                 ps.executeUpdate();
@@ -84,16 +92,19 @@ public class DAOProvider {
 
     /**
      * Method adds new providers to database
-     * @param id_product products identifier
+     *
+     * @param id_product       products identifier
      * @param date_of_delivery date of delivery
-     * @param name_provider providers name
+     * @param name_provider    providers name
      * @throws SQLException
      * @throws ClassNotFoundException
      */
     public static void addProvider(String id_product, String date_of_delivery, String name_provider) throws SQLException, ClassNotFoundException {
         try {
             Connection c = getConnection();
-            PreparedStatement ps = c.prepareStatement("INSERT INTO provider (id_product, date_of_delivery,name_provider) VALUES (?,?,?)");
+            ResourceBundle props = ResourceBundle.getBundle("accountSQL");
+            String res = props.getString("provider.insert");
+            PreparedStatement ps = c.prepareStatement(res);
             {
                 ps.setInt(1, Integer.parseInt(String.valueOf(id_product)));
                 ps.setDate(2, Date.valueOf(date_of_delivery));

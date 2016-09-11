@@ -12,6 +12,7 @@ import java.sql.SQLException;
 
 /**
  * Servlet responds to the URL /sale
+ *
  * @author Sarnavskaya
  */
 @WebServlet(name = "servlet.SaleServlet", urlPatterns = "/sale")
@@ -20,7 +21,8 @@ public class SaleServlet extends HttpServlet {
 
     /**
      * Method that call when POST request came from server
-     * @param request request from client
+     *
+     * @param request  request from client
      * @param response response to client
      * @throws ServletException
      * @throws IOException
@@ -32,7 +34,8 @@ public class SaleServlet extends HttpServlet {
 
     /**
      * Method that call when GET request came from server
-     * @param request request from client
+     *
+     * @param request  request from client
      * @param response response to client
      * @throws ServletException
      * @throws IOException
